@@ -21,6 +21,7 @@ const Layout: React.FC<LayoutProps> = ({
   return (
     <>
       <Head>
+        <link rel="icon" href="/svgs/HV.svg" />
         <title>
           {title ||
             "HiVoco Studios | Voice AI first solutions – Bharat Bhasha AI, Talking Brochures AI and Razor Sharp Operations"}
