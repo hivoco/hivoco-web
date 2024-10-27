@@ -4,6 +4,7 @@ import FAQComponent from "@/components/FAQ";
 import FAQ from "@/components/FAQ";
 import GlassCard from "@/components/GlassCard";
 import Header from "@/components/Header";
+import Layout from "@/components/Layout";
 import React, { useRef } from "react";
 
 function index() {
@@ -44,7 +45,7 @@ function index() {
     },
   ];
   return (
-    <div>
+    <Layout>
       <Header />
       <section>
         <Card
@@ -66,7 +67,7 @@ function index() {
       <section ref={sectionRef}>
         <Contact />
       </section>
-    </div>
+    </Layout>
   );
 }
 

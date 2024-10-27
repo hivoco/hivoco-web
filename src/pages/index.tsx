@@ -5,6 +5,7 @@ import Contact from "@/components/Contact";
 import CrouselCompany from "@/components/CrouselCompany";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import Layout from "@/components/Layout";
 import { useRouter } from "next/router";
 import { useRef } from "react";
 
@@ -27,7 +28,7 @@ function HomePage() {
   };
 
   return (
-    <div>
+    <Layout>
       <Header />
       <section
         className="w-screen "
@@ -90,7 +91,7 @@ function HomePage() {
       <section ref={sectionRef} id="contact-us">
         <Contact />
       </section>
-    </div>
+    </Layout>
   );
 }
 
