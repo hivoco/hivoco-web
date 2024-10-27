@@ -36,7 +36,7 @@ export default function ImageCarousel() {
   }, []);
 
   return (
-    <div className="relative w-[500px] h-[350px] overflow-hidden ">
+    <div className="relative hidden md:block w-[500px] h-[350px] overflow-hidden ">
       {/* Image Wrapper */}
       <div
         className="flex transition-transform duration-500 ease-in-out"

@@ -12,9 +12,10 @@ function Awards() {
         <div className="h-px w-[70px] bg-[#FF512D80]"></div>
       </div>
       <div className="py-12 flex justify-between  px-20 flex-shrink-0 flex-wrap gap-4 xl:gap-0">
-        {awards.map((a) => {
+        {awards.map((a,index) => {
           return (
             <Image
+            key={index}
               src={`/awards/${a}.png`}
               alt="example"
               width={150}
