@@ -105,7 +105,7 @@ function Header() {
                 </span>
                 <span
                   className={`absolute left-1/2 bottom-0 h-[2px] w-0 bg-gradient-to-r from-red-800 to-blue-800 transition-all duration-300 ease-in-out group-hover:w-full group-hover:left-0 ${
-                    router.pathname === n.path ? "w-full -left-0" : ""
+                    router.pathname === n.path ? "w-full -left-1" : ""
                   }`}
                 />
               </p>

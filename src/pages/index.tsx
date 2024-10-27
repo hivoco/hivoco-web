@@ -61,7 +61,7 @@ function HomePage() {
           paragraph={
             "Turn your store's video and voice data into actionable <br/> insights. Razor Sharp helps you uncover hidden <br/> opportunities, optimise operations, and boost customer <br/> satisfaction through Insights and Real-time Actionable <br/>Notifications."
           }
-          image={"razorsharpImg"}
+          image={"razorSharpImg"}
           scheduleFunction={handleScroll}
           buttonFunction={() => changeRoute("/razor-sharp")}
         />
