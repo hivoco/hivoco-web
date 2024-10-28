@@ -52,15 +52,15 @@ const FAQComponent: React.FC<props> = ({ image, faqs }) => {
   };
 
   return (
-    <div className="container p-20  ">
+    <div className="container px-5 xl:px-20 py-20  ">
       <div className="text-center mb-16 ">
-        <small className="font-sf-pro-display-bold font-normal text-5xl leading-[60px]">
+        <small className="font-sf-pro-display-bold font-normal text-3xl xl:text-5xl leading-[60px]">
           Key
           <strong>&nbsp;Features</strong>
         </small>
       </div>
       <div className="flex flex-between-center p-6 bg-white rounded-3xl gap-24">
-        <div>
+        <div className="xl:w-1/2 w-full">
           {faqs?.map((faq, index) => (
             <FAQItem
               key={index}

@@ -32,9 +32,9 @@ function Card({
       // style={{ flexDirection: true ? "row-reverse" : "column-reverse" }}
       className={`container flex  flex-col-reverse ${
         isLeft ? "xl:flex-row-reverse" : "xl:flex-row"
-      } xl:justify-between justify-center items-center px-20 py-20`}
+      } xl:justify-between justify-center items-center px-5 xl:px-20 py-20`}
     >
-      <div className="flex flex-col items-center xl:items-start">
+      <div className="flex flex-col ">
         <div className="relative mt-6 xl:mt-0">
           <Image
             src={`/pngs/${title}.png`}
@@ -48,7 +48,7 @@ function Card({
             dangerouslySetInnerHTML={{ __html: paragraph }}
           />
         </div>
-        <div className="flex items-center gap-7 ">
+        <div className="flex items-center gap-7">
           <Button
             onClick={buttonFunction}
             title={`${buttontext}`}

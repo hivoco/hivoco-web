@@ -37,9 +37,14 @@ function HomePage() {
         <Hero handleScroll={handleScroll} />
 
         <div className={`${styles.flexCol} mt-3`}>
-          <p className="text-p-gray font-sf-pro-display-normal text-lg ">
-            Trusted by
-          </p>
+          <div className="flex items-center justify-center space-x-4">
+            <div className="h-px w-[70px] bg-[#FF512D80]"></div>
+            <p className="text-p-gray font-sf-pro-display-normal text-lg ">
+              Trusted by
+            </p>
+            <div className="h-px w-[70px] bg-[#FF512D80]"></div>
+          </div>
+
           <CrouselCompany />
         </div>
       </section>
@@ -50,7 +55,7 @@ function HomePage() {
           paragraph={
             "Human-like conversational AI tailored for India's diverse languages, <br/> transforming telephonic sales interactions. With support for over 10 <br/> regional languages and seamless integration with existing systems,<br/> it delivers real-time, natural conversations that boost engagement <br/> and conversion rates. Scalable and customizable, Bharat Bhasha AI <br/> is the ideal telephonic solution for businesses looking to connect <br/> authentically with their customers while driving actionable insights <br/>and enhancing sales efficiency."
           }
-          image={"talkingImg"}
+          image={"bharatImg"}
           isLeft={true}
           scheduleFunction={handleScroll}
           buttonFunction={() => changeRoute("/bharat-bhasha")}

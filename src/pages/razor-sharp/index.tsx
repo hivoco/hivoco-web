@@ -9,10 +9,10 @@ import { useRouter } from "next/router";
 import React, { useRef } from "react";
 
 function index() {
- const sectionRef = useRef<HTMLDivElement>(null);
- const handleScroll = () => {
-   sectionRef.current?.scrollIntoView({ behavior: "smooth" });
- };
+  const sectionRef = useRef<HTMLDivElement>(null);
+  const handleScroll = () => {
+    sectionRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
   const faqs = [
     {
       question: "Customer Experience & Satisfaction",
@@ -44,7 +44,7 @@ function index() {
           paragraph={
             "Turn your store's video and voice data into actionable <br/> insights. Razor Sharp helps you uncover hidden <br/> opportunities, optimise operations, and boost customer <br/> satisfaction through Insights and Real-time Actionable <br/>Notifications."
           }
-          image={"razorsharpImg"}
+          image={"razorSharpImg"}
           buttontext="Schedule a demo"
           buttonclass={"w-56"}
           issecondbutton={false}
@@ -52,18 +52,18 @@ function index() {
         />
       </section>
       <section>
-        <div className="container px-20 py-12">
-          <div className="flex justify-between items-center">
+        <div className="container px-5 xl:px-20 py-12">
+          <div className="flex flex-col xl:flex-row justify-between items-center">
             <small className="font-sf-pro-display-bold font-normal text-5xl leading-[60px]">
               Get ready for{" "}
               <strong>
                 game <br /> changing results
               </strong>
             </small>
-            <div className="">
+            <div className=" mt-10 xl:mt-0">
               <GlassCard
                 className={
-                  "bg-[#9999E9] text-[#2D2D58] rotate-12 absolute -translate-x-60 translate-y-24 z-0"
+                  "bg-[#9999E9] text-[#2D2D58] rotate-12 xl:absolute translate-x-0 xl:-translate-x-60 translate-y-0 xl:translate-y-24 z-0"
                 }
                 percentage={"35%"}
                 small={"Process Adherence"}
@@ -77,7 +77,7 @@ function index() {
               />
               <GlassCard
                 className={
-                  "bg-[#EE396A] text-[#fff] -rotate-12 -translate-y-5 z-30 "
+                  "bg-[#EE396A] text-[#fff] -rotate-12 translate-y-0 xl:-translate-y-5 z-30 "
                 }
                 percentage={"52%"}
                 small={"Additional Upsell"}

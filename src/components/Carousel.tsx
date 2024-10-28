@@ -8,7 +8,7 @@ interface props {
 export default function Carousel({ title, paragraph }: props) {
   return (
     <div
-      className={`container flex  flex-col-reverse xl:flex-row xl:justify-between justify-center items-center px-20 py-20`}
+      className={`container flex  flex-col-reverse xl:flex-row xl:justify-between justify-center items-center px-5 xl:px-20 py-20`}
     >
       <div className="flex flex-col items-center xl:items-start">
         <div className="relative mt-6 xl:mt-0">

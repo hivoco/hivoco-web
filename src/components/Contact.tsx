@@ -11,7 +11,7 @@ function Contact() {
         backgroundBlendMode: "overlay",
       }}
     >
-      <div className="container flex flex-col xl:flex-row gap-11 xl:gap-0 justify-between items-center px-12 pt-24 pb-14 ">
+      <div className="container flex flex-col xl:flex-row gap-11 xl:gap-0 justify-between items-center px-5 xl:px-12 pt-24 pb-14  ">
         <div className="flex flex-col gap-3 text-white">
           <h2 className="font-sf-pro-display-bold text-3xl md:text-4xl xl:text-5xl font-bold">
             GET IN TOUCH <br /> WITH US!
