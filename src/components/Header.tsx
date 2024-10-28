@@ -14,7 +14,7 @@ function Header() {
     paragraph: "text-base font-normal text-black relative group",
     selected:
       "font-medium text-transparent bg-clip-text bg-gradient-to-r from-red-800 to-blue-800",
-    submenu: "absolute bg-[#F8F8F8] shadow-md rounded w-52 p-5 z-50",
+    submenu: "absolute bg-[#F8F8F8] shadow-md rounded w-52 p-5 z-50 text-start",
     submenuItem:
       "block text-black hover:bg-gray-200 py-1 px-2 rounded py-2 border-b",
   };

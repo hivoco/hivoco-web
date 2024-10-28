@@ -28,6 +28,21 @@ function index() {
       answer:
         "Leveraging real-time AI-driven intelligence, the system offers quick, accurate responses without any delay, enhancing customer satisfaction. It’s built for high-volume conversations and provides actionable insights by analyzing conversation patterns, allowing businesses to optimize their sales strategies.",
     },
+    {
+      question: "Seamless CRM Integration",
+      answer:
+        "Integrate effortlessly with existing CRM systems to streamline operations and ensure a seamless flow of data. Bharat Bhasha AI works in sync with backend systems to automate lead generation, qualification, and follow-ups, enabling businesses to maintain customer records and manage sales pipelines efficiently.",
+    },
+    {
+      question: "Grounded in business logic ",
+      answer:
+        "Equipped with industry-specific workflows, Bharat Bhasha AI is customizable to fit the needs of any business. Whether it's retail, BFSI, or healthcare, the AI adjusts to deliver solutions tailored to your sales process, reducing time-to-market and improving productivity.",
+    },
+    {
+      question: "Actionable Insights and Scalability",
+      answer:
+        "Gain access to actionable insights that help fine-tune your approach to sales conversations, identify potential bottlenecks, and scale your operations. Bharat Bhasha AI is designed to grow with your business, ensuring you can handle increased call volumes without compromising on quality.",
+    },
   ];
   return (
     <Layout>

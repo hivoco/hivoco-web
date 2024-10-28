@@ -5,11 +5,11 @@ function Awards() {
   return (
     <div className="container  py-12 flex flex-col  ">
       <div className="flex items-center justify-center space-x-4">
-        <div className="h-px w-[70px] bg-[#FF512D80]"></div>
+        <div className="h-px w-[60px] bg-[#FF512D80]"></div>
         <strong className="font-sf-pro-display-bold font-bold text-2xl">
           Our Awards
         </strong>
-        <div className="h-px w-[70px] bg-[#FF512D80]"></div>
+        <div className="h-px w-[60px] bg-[#FF512D80]"></div>
       </div>
       <div className="py-12 flex justify-between  px-20 flex-shrink-0 flex-wrap gap-4 xl:gap-0">
         {awards.map((a,index) => {

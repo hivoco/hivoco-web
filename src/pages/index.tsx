@@ -38,13 +38,13 @@ function HomePage() {
         <Hero handleScroll={handleScroll} />
       </section>
       <section>
-        <div className={`${styles.flexCol} mt-3`}>
+        <div className={`${styles.flexCol} mt-10`}>
           <div className="flex items-center justify-center space-x-4">
-            <div className="h-px w-[70px] bg-[#FF512D80]"></div>
-            <p className="text-p-gray font-sf-pro-display-normal text-lg ">
+            <div className="h-px w-[60px] bg-[#FF512D80]"></div>
+            <p className="text-p-gray font-sf-pro-display-normal font-semibold text-lg ">
               Trusted by
             </p>
-            <div className="h-px w-[70px] bg-[#FF512D80]"></div>
+            <div className="h-px w-[60px] bg-[#FF512D80]"></div>
           </div>
           <CrouselCompany />
         </div>

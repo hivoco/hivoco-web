@@ -16,7 +16,7 @@ function CrouselCompany() {
               alt="example"
               width={150}
               height={150}
-              className="object-cover w-auto h-10 rounded-lg"
+              className="object-cover w-auto h-12 rounded-lg"
             />
           </div>
         ))}

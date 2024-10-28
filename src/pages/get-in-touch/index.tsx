@@ -46,10 +46,10 @@ function index() {
           </div>
           <div>
             <select className="text-p-gray bg-transparent outline-none font-sf-pro-display-normal text-sm lg:text-lg w-64 ring-1 rounded-lg ring-[#00000040] p-4 mt-11 mb-9">
-              <option value="0">Select car:</option>
-              <option value="1">Audi</option>
-              <option value="2">BMW</option>
-              <option value="3">Citroen</option>
+              <option value="0">Select a category</option>
+              <option value="1">Tech</option>
+              <option value="2">Creative</option>
+              <option value="3">Career</option>
             </select>
           </div>
           <div className="grid grid-cols-2 gap-8">
@@ -110,9 +110,9 @@ function index() {
             <input
               className="font-normal font-sf-pro-display-normal text-sm"
               type="checkbox"
-              id="vehicle1"
-              name="vehicle1"
-              value="Bike"
+              id="accept"
+              name="accept"
+              value="Accept"
             />
             <label>
               {" "}
