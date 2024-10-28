@@ -15,7 +15,7 @@ const Hero = ({ handleScroll }: props) => {
         backgroundBlendMode: "overlay",
       }}
     >
-      <div className="flex container flex-col justify-center items-center py-28 gap-7 text-center">
+      <div className="flex container flex-col justify-center items-center px-5 xl:px-20 py-28 gap-7 text-center">
         <h2 className="font-sf-pro-display-bold text-3xl xl:text-5xl font-bold">
           Leverage the power of Voice-AI, <br /> Video AI, Computer Vision &{" "}
           <br /> Interactive Content

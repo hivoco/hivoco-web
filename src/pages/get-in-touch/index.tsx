@@ -1,4 +1,4 @@
-import Contact from "@/components/Contact";
+import Bottom from "@/components/Bottom";
 import Header from "@/components/Header";
 import Layout from "@/components/Layout";
 import Button from "@/elements/Button";
@@ -130,8 +130,15 @@ function index() {
         </div>
       </section>
 
-      <section>
-        <Contact />
+      <section
+        className=" w-full bg-cover"
+        style={{
+          backgroundImage:
+            "linear-gradient(to bottom, #82A5F3, #6969AF), url('/pngs/Texture.png')",
+          backgroundBlendMode: "overlay",
+        }}
+      >
+        <Bottom />
       </section>
     </Layout>
   );

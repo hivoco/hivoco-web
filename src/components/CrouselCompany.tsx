@@ -8,7 +8,7 @@ function CrouselCompany() {
 
   return (
     <div className="overflow-hidden w-screen">
-      <div className="flex animate-scroll py-10 px-3 gap-14 whitespace-nowrap">
+      <div className="flex animate-scroll py-10 px-3  gap-14 whitespace-nowrap">
         {infiniteLogos.map((l, index) => (
           <div key={index} className="inline-block flex-shrink-0">
             <Image

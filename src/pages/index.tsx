@@ -2,6 +2,7 @@ import Awards from "@/components/Awards";
 import Card from "@/components/Card";
 import Carousel from "@/components/Carousel";
 import Contact from "@/components/Contact";
+import Bottom from "@/components/Bottom";
 import CrouselCompany from "@/components/CrouselCompany";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
@@ -35,7 +36,8 @@ function HomePage() {
         style={{ maxHeight: "calc(100vh - 90px)" }}
       >
         <Hero handleScroll={handleScroll} />
-
+      </section>
+      <section>
         <div className={`${styles.flexCol} mt-3`}>
           <div className="flex items-center justify-center space-x-4">
             <div className="h-px w-[70px] bg-[#FF512D80]"></div>
@@ -92,8 +94,18 @@ function HomePage() {
       <section>
         <Awards />
       </section>
-      <section ref={sectionRef} id="contact-us">
+      <section
+        className=" w-full bg-cover"
+        style={{
+          backgroundImage:
+            "linear-gradient(to bottom, #82A5F3, #6969AF), url('/pngs/Texture.png')",
+          backgroundBlendMode: "overlay",
+        }}
+        ref={sectionRef}
+        id="contact-us"
+      >
         <Contact />
+        <Bottom />
       </section>
     </Layout>
   );

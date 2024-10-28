@@ -1,3 +1,4 @@
+import Bottom from "@/components/Bottom";
 import Card from "@/components/Card";
 import Contact from "@/components/Contact";
 import FAQComponent from "@/components/FAQ";
@@ -48,8 +49,18 @@ function index() {
       <section>
         <FAQComponent faqs={faqs} image={"bharat bhasha img"} />
       </section>
-      <section ref={sectionRef}>
+      <section
+        className=" w-full bg-cover"
+        style={{
+          backgroundImage:
+            "linear-gradient(to bottom, #82A5F3, #6969AF), url('/pngs/Texture.png')",
+          backgroundBlendMode: "overlay",
+        }}
+        ref={sectionRef}
+        id="contact-us"
+      >
         <Contact />
+        <Bottom />
       </section>
     </Layout>
   );

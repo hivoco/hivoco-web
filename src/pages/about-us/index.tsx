@@ -1,6 +1,7 @@
 import Contact from "@/components/Contact";
 import Layout from "@/components/Layout";
 import Header from "@/components/Header";
+import Bottom from "@/components/Bottom";
 
 function index() {
   return (
@@ -11,8 +12,18 @@ function index() {
           <h2>Coming Soon...</h2>
         </div>
       </section>
-      <section id="contact-us">
+      <section
+        className=" w-full bg-cover"
+        style={{
+          backgroundImage:
+            "linear-gradient(to bottom, #82A5F3, #6969AF), url('/pngs/Texture.png')",
+          backgroundBlendMode: "overlay",
+        }}
+        // ref={sectionRef}
+        id="contact-us"
+      >
         <Contact />
+        <Bottom />
       </section>
     </Layout>
   );
