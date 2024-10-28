@@ -16,7 +16,7 @@ export default function Carousel({ title, paragraph }: props) {
             {title}
           </h2>
           <p
-            className="text-p-gray font-sf-pro-display-normal text-sm lg:text-lg pt-4 pb-6"
+            className="text-p-gray font-sf-pro-display-normal text-sm lg:text-base pt-4 pb-6"
             dangerouslySetInnerHTML={{ __html: paragraph }}
           />
         </div>

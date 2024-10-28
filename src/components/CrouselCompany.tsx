@@ -4,25 +4,13 @@ function CrouselCompany() {
   const logo = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
 
   // Duplicate the logos for infinite scrolling effect
-  const infiniteLogos = [
-    ...logo,
-    ...logo,
-    ...logo,
-    ...logo,
-    ...logo,
-    ...logo,
-    ...logo,
-    ...logo,
-  ];
+  const infiniteLogos = [...logo, ...logo, ...logo, ...logo];
 
   return (
-    <div className="relative overflow-hidden w-screen">
-      <div
-        className={`flex  animate-scroll py-7 px-3 gap-14`}
-        style={{ whiteSpace: "nowrap" }}
-      >
+    <div className="overflow-hidden w-screen">
+      <div className="flex animate-scroll py-10 px-3 gap-14 whitespace-nowrap">
         {infiniteLogos.map((l, index) => (
-          <div key={index} className="relative inline-block flex-shrink-0 ">
+          <div key={index} className="inline-block flex-shrink-0">
             <Image
               src={`/brand/${l}.png`}
               alt="example"

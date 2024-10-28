@@ -18,7 +18,7 @@ function Button({ title, className, isIcon = true, onClick }: ButtonProps) {
   return (
     <div
       onClick={onClick}
-      className={`${styles.flexCenter} ${styles.flex} px-1 py-4 bg-[#F25F3E] h-min text-white gap-1  rounded-md shadow-button-shadow hover:cursor-pointer group ${className}`}
+      className={`${styles.flexCenter} ${styles.flex} px-1 py-3 bg-[#F25F3E] h-min text-white gap-1  rounded-md shadow-button-shadow hover:cursor-pointer group ${className}`}
     >
       <button className="text-sm lg:text-lg font-medium font-sf-pro-display-medium ">
         {title}

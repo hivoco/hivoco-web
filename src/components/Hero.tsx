@@ -2,12 +2,10 @@ import Button from "@/elements/Button";
 import { useRef } from "react";
 
 interface props {
-  handleScroll:()=>void
+  handleScroll: () => void;
 }
 
-const Hero = ({handleScroll}:props) => {
-
-
+const Hero = ({ handleScroll }: props) => {
   return (
     <div
       className=" w-full bg-cover "
@@ -21,7 +19,7 @@ const Hero = ({handleScroll}:props) => {
         <h2 className="font-sf-pro-display-bold text-3xl md:text-4xl lg:text-5xl font-bold">
           Lorem ipsum dolor sit <br /> amet consectetur.
         </h2>
-        <p className="text-p-gray font-sf-pro-display-normal text-sm lg:text-lg">
+        <p className="text-p-gray font-sf-pro-display-normal text-sm lg:text-base">
           Lorem ipsum dolor sit amet consectetur. Sed <br /> pulvinar id leo eu
           imperdiet platea dui. Lorem <br /> ipsum dolor sit amet consectetur.
         </p>

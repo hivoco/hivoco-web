@@ -44,7 +44,6 @@ function HomePage() {
             </p>
             <div className="h-px w-[70px] bg-[#FF512D80]"></div>
           </div>
-
           <CrouselCompany />
         </div>
       </section>

@@ -101,14 +101,13 @@ body::-webkit-scrollbar {
   }
 
   100% {
-    transform: translateX(-50%);
-    /* This should be equal to the total width of the images displayed */
+    transform: translateX(-100%);
   }
 }
 
 .animate-scroll {
-  animation: scroll 5s linear infinite;
-  /* Adjust the duration for speed */
+  display: flex;
+  animation: scroll 20s linear infinite;
 }
 
 .container {

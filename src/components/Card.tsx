@@ -29,7 +29,6 @@ function Card({
   return (
     <div
       id={id}
-      // style={{ flexDirection: true ? "row-reverse" : "column-reverse" }}
       className={`container flex  flex-col-reverse ${
         isLeft ? "xl:flex-row-reverse" : "xl:flex-row"
       } xl:justify-between justify-center items-center px-5 xl:px-20 py-20`}
@@ -44,7 +43,7 @@ function Card({
             className="object-cover h-20 w-auto rounded-lg"
           />
           <p
-            className="text-p-gray font-sf-pro-display-normal text-sm lg:text-lg pt-4 pb-6"
+            className="text-p-gray font-sf-pro-display-normal text-sm lg:text-base pt-4 pb-6"
             dangerouslySetInnerHTML={{ __html: paragraph }}
           />
         </div>
