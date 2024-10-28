@@ -1,5 +1,3 @@
-
-
 import Image from "next/image";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
@@ -34,7 +32,7 @@ function Header() {
         { id: 3, name: "Talking Brochure", path: "/talking-brochures" },
       ],
     },
-    { id: 4, name: "Contact Us", path: "/#contact-us" },
+    { id: 4, name: "Contact Us", path: "/get-in-touch" },
   ];
 
   const [isSubMenuOpen, setSubMenuOpen] = useState(false);

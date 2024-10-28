@@ -17,13 +17,21 @@ const Hero = ({ handleScroll }: props) => {
     >
       <div className="flex container flex-col justify-center items-center py-28 gap-7 text-center">
         <h2 className="font-sf-pro-display-bold text-3xl xl:text-5xl font-bold">
-          Lorem ipsum dolor sit <br /> amet consectetur.
+          Leverage the power of Voice-AI, <br /> Video AI, Computer Vision &{" "}
+          <br /> Interactive Content
         </h2>
         <p className="text-p-gray font-sf-pro-display-normal text-sm lg:text-lg">
-          Lorem ipsum dolor sit amet consectetur. Sed <br /> pulvinar id leo eu
-          imperdiet platea dui. Lorem <br /> ipsum dolor sit amet consectetur.
+          HiVoco Studio’s patent-published tech helps you to meaningfully
+          <br />
+          engage with your users, solve business problems & drive
+          <br />
+          profitable growth
         </p>
-        <Button onClick={handleScroll} title={"Explore"} className="w-48" />
+        <Button
+          onClick={handleScroll}
+          title={"Connect With Us"}
+          className="w-48"
+        />
       </div>
     </div>
   );

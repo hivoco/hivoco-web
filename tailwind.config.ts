@@ -22,7 +22,8 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        'p-gray':"#7A7A7A"
+        'p-gray':"#7A7A7A",
+        'buttonColor':'#F25F3E'
       },
        fontFamily: {
         'sf-pro-display-normal': ['SFProDisplayNormal', 'sans-serif'],
