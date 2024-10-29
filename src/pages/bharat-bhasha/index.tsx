@@ -55,7 +55,7 @@ function index() {
       <Header />
       <section>
         <Card
-          title={"BharatBhasha"}
+          title={"BharatBhashaNew"}
           paragraph={
             "Human-like conversational AI tailored for India's diverse languages, <br/> transforming telephonic sales interactions. With support for over 10 <br/> regional languages and seamless integration with existing systems,<br/> it delivers real-time, natural conversations that boost engagement <br/> and conversion rates. Scalable and customizable, Bharat Bhasha AI <br/> is the ideal telephonic solution for businesses looking to connect <br/> authentically with their customers while driving actionable insights <br/>and enhancing sales efficiency."
           }

@@ -52,7 +52,7 @@ function HomePage() {
       <section>
         <Card
           id="bharat-bhasha"
-          title={"BharatBhasha"}
+          title={"BharatBhashaNew"}
           paragraph={
             "Human-like conversational AI tailored for India's diverse languages, <br/> transforming telephonic sales interactions. With support for over 10 <br/> regional languages and seamless integration with existing systems,<br/> it delivers real-time, natural conversations that boost engagement <br/> and conversion rates. Scalable and customizable, Bharat Bhasha AI <br/> is the ideal telephonic solution for businesses looking to connect <br/> authentically with their customers while driving actionable insights <br/>and enhancing sales efficiency."
           }
@@ -63,17 +63,17 @@ function HomePage() {
         />
         <Card
           id="razor-sharp"
-          title={"RazorSharp"}
+          title={"RazorSharpNew"}
           paragraph={
             "Turn your store's video and voice data into actionable <br/> insights. Razor Sharp helps you uncover hidden <br/> opportunities, optimise operations, and boost customer <br/> satisfaction through Insights and Real-time Actionable <br/>Notifications."
           }
-          image={"razorSharpImg"}
+          image={"RazorSharpNewImg"}
           scheduleFunction={handleScroll}
           buttonFunction={() => changeRoute("/razor-sharp")}
         />
         <Card
           id="talking-brochure"
-          title={"TalkingBrochures"}
+          title={"TalkingBrochuresNew"}
           paragraph={
             "Revolutionize brand communication by turning traditional <br/> marketing collaterals into interactive, Multilingual Industry <br/> First AI-powered experiences. Designed for Indic <br/> Languages and with seamless voice & visual engagement, <br/> it goes beyond static PDFs, offering real-time updates and <br/> boosting customer interaction across multiple channels."
           }

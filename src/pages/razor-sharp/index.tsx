@@ -44,11 +44,11 @@ function index() {
       <Header />
       <section>
         <Card
-          title={"RazorSharp"}
+          title={"RazorSharpNew"}
           paragraph={
             "Turn your store's video and voice data into actionable <br/> insights. Razor Sharp helps you uncover hidden <br/> opportunities, optimise operations, and boost customer <br/> satisfaction through Insights and Real-time Actionable <br/>Notifications."
           }
-          image={"razorSharpImg"}
+          image={"RazorSharpNewImg"}
           buttontext="Schedule a demo"
           buttonclass={"w-56"}
           issecondbutton={false}
@@ -92,7 +92,7 @@ function index() {
         </div>
       </section>
       <section>
-        <FAQComponent faqs={faqs} image={"razorsharp img"} />
+        <FAQComponent faqs={faqs} image={"RazorSharpNew img"} />
       </section>
       <section
         className=" w-full bg-cover"

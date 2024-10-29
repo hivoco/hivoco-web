@@ -56,7 +56,7 @@ function index() {
       <Header />
       <section>
         <Card
-          title={"TalkingBrochures"}
+          title={"TalkingBrochuresNew"}
           paragraph={
             "Revolutionize brand communication by turning traditional <br/> marketing collaterals into interactive, Multilingual Industry <br/> First AI-powered experiences. Designed for Indic <br/> Languages and with seamless voice & visual engagement, <br/> it goes beyond static PDFs, offering real-time updates and <br/> boosting customer interaction across multiple channels."
           }

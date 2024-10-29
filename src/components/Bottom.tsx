@@ -37,7 +37,7 @@ function Bottom() {
               onClick={() => changeRoute("/razor-sharp")}
               className=" cursor-pointer font-sf-pro-display-bold font-normal text-base"
             >
-              Razorsharp
+              RazorSharpNew
             </small>
             <small
               onClick={() => changeRoute("/talking-brochures")}
