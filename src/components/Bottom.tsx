@@ -12,7 +12,7 @@ function Bottom() {
     window.open(`${url}`, "_blank", "noopener,noreferrer");
   };
   return (
-    <div className="border-t-[0.5px] border-t-gray-200">
+    <div className="border-t-[0.5px] border-t-blue-200">
       <div className="container   px-5 xl:px-20 pt-20 pb-14   ">
         <div className="flex justify-between items-start  w-full text-white">
           <Image
@@ -88,8 +88,8 @@ function Bottom() {
             />
           </div>
         </div>
-        <div className="flex flex-col mt-14">
-          <div className="flex gap-5">
+        <div className="flex flex-col mt-5">
+          {/* <div className="flex gap-5">
             <Image
               src={"/pngs/Ellipse 3.png"}
               alt={`Slide`}
@@ -102,7 +102,7 @@ function Bottom() {
               width={54}
               height={54}
             />
-          </div>
+          </div> */}
           <div className="flex gap-5 text-white mt-8">
             <small className=" cursor-pointer font-sf-pro-display-bold font-normal text-base">
               © Hivoco Studios

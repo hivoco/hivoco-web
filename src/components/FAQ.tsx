@@ -35,6 +35,7 @@ const FAQItem: React.FC<FAQItemProps> = ({
 };
 
 interface FAQ {
+  image: string;
   question: string;
   answer: string;
 }
@@ -46,9 +47,11 @@ interface props {
 
 const FAQComponent: React.FC<props> = ({ image, faqs }) => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const [imageIndex, setImageIndex] = useState<number>(0);
 
   const handleToggle = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
+    setImageIndex(index);
   };
 
   return (
@@ -72,13 +75,15 @@ const FAQComponent: React.FC<props> = ({ image, faqs }) => {
           ))}
         </div>
         <div className="relative hidden xl:block">
-          <Image
-            src={`/pngs/faq/${image}.png`}
-            alt="example"
-            width={400}
-            height={200}
-            // className="object-cover h-auto w-auto border"
-          />
+          {faqs && faqs[imageIndex] && (
+            <Image
+              src={`/key-feature/${faqs[imageIndex]?.image}.png`}
+              alt="example"
+              width={400}
+              height={200}
+              className="rounded-3xl"
+            />
+          )}
         </div>
       </div>
     </div>

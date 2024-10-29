@@ -15,31 +15,37 @@ function index() {
   };
   const faqs = [
     {
+      image: "Designed for 10+ Indic Languages",
       question: "Designed for 10+ Indic Languages",
       answer:
         "Set up in one language and make conversations in 11 languages, including 10 Indic languages.",
     },
     {
+      image: "Beyond Print and PDFs",
       question: "Beyond Print and PDFs",
       answer:
         "Go beyond static offline & digital brochures. Our platform is optimized for mobile, offering seamless interaction across multiple touchpoints.",
     },
     {
+      image: "Multi-Channel Integration",
       question: "Multi-Channel Integration",
       answer:
         "Whether it’s through QR codes on packaging, TV ads, POS displays, or social media, Talking Brochures fit into any marketing channel, extending the reach and shelf life of your campaigns.",
     },
     {
+      image: "Real-Time Updates",
       question: "Real-Time Updates",
       answer:
         " Never worry about outdated information again. Our platform updates instantly, ensuring your customers always have the most relevant content.",
     },
     {
+      image: "CRM-Friendly",
       question: "CRM-Friendly",
       answer:
         "Effortlessly integrates with existing CRM systems, keeping your marketing operations smooth and connected.",
     },
     {
+      image: "Conversational Commerce",
       question: "Conversational Commerce",
       answer:
         "Customers prefer conversations over reading, and Talking Brochures capitalizes on this insight by delivering fast, voice-activated answers that drive higher conversions.",

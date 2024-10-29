@@ -84,7 +84,7 @@ function HomePage() {
         />
 
         <Carousel
-          title={"Interactive Content"}
+          title={"Creative Studio"}
           paragraph={
             "Enhance Customer Engagement with AI-Driven Gamified <br/>  Experiences. Transform simple packaging into an innovative <br/>  marketing asset. "
           }

@@ -40,7 +40,7 @@ function Card({
             alt="example"
             width={500}
             height={300}
-            className="object-cover h-20 w-auto rounded-lg"
+            className="object-cover h-auto w-auto rounded-lg"
           />
           <p
             className="text-p-gray font-sf-pro-display-normal text-sm lg:text-base pt-4 pb-6"
@@ -64,13 +64,13 @@ function Card({
         </div>
       </div>
 
-      <div className="relative">
+      <div className="relative ">
         <Image
           src={`/pngs/${image}.png`}
           alt="example"
           width={500}
           height={300}
-          className="object-cover h-auto w-auto rounded-lg"
+          className="object-cover h-auto w-auto  "
         />
       </div>
     </div>

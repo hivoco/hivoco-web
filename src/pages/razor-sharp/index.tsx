@@ -2,11 +2,10 @@ import Bottom from "@/components/Bottom";
 import Card from "@/components/Card";
 import Contact from "@/components/Contact";
 import FAQComponent from "@/components/FAQ";
-import FAQ from "@/components/FAQ";
 import GlassCard from "@/components/GlassCard";
 import Header from "@/components/Header";
 import Layout from "@/components/Layout";
-import { useRouter } from "next/router";
+
 import React, { useRef } from "react";
 
 function index() {
@@ -16,21 +15,25 @@ function index() {
   };
   const faqs = [
     {
+      image: "Customer Experience & Satisfaction",
       question: "Customer Experience & Satisfaction",
       answer:
         "Gain deeper insights into customer behavior, demographics, and interaction quality, ensuring every customer leaves satisfied.",
     },
     {
+      image: "Sales & Upselling Opportunities",
       question: "Sales & Upselling Opportunities",
       answer:
         "Monitor customer conversations and employee engagement to identify upselling potential and maximize sales performance.",
     },
     {
+      image: "Employee Training & Performance",
       question: "Employee Training & Performance",
       answer:
         "Empower your team: Razor Sharp tracks interactions to highlight training needs, helping you develop top-performing employees and reduce turnover.",
     },
     {
+      image: "Actionable Real-time Notifications",
       question: "Actionable Real-time Notifications ",
       answer:
         "Get real-time notifications on Standard Operating Procedure (SOP) deviations, ensuring your store runs smoothly and efficiently.",
@@ -61,7 +64,7 @@ function index() {
                 game <br /> changing results
               </strong>
             </small>
-            <div className=" mt-10 xl:mt-0">
+            <div data-aos="slide-up" className=" mt-10 xl:mt-0 ">
               <GlassCard
                 className={
                   "bg-[#9999E9] text-[#2D2D58] rotate-12 xl:absolute translate-x-0 xl:-translate-x-60 translate-y-0 xl:translate-y-24 z-0"

@@ -1,5 +1,6 @@
 // components/Layout.tsx
 import Head from "next/head";
+import "aos/dist/aos.css";
 
 interface LayoutProps {
   title?: string;
