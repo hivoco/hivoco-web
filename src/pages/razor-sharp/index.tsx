@@ -48,7 +48,7 @@ function index() {
           paragraph={
             "Turn your store's video and voice data into actionable <br/> insights. Razor Sharp helps you uncover hidden <br/> opportunities, optimise operations, and boost customer <br/> satisfaction through Insights and Real-time Actionable <br/>Notifications."
           }
-          image={"RazorSharpNewImg"}
+          image={"razorSharpImg"}
           buttontext="Schedule a demo"
           buttonclass={"w-56"}
           issecondbutton={false}

@@ -36,7 +36,7 @@ export default function ImageCarousel() {
   }, []);
 
   return (
-    <div className="relative hidden md:block w-[500px] h-[350px] overflow-hidden ">
+    <div className="relative w-full max-w-[500px]  overflow-hidden  ">
       {/* Image Wrapper */}
       <div
         className="flex transition-transform duration-500 ease-in-out"
@@ -44,7 +44,7 @@ export default function ImageCarousel() {
       >
         {/* Images */}
         {images.map((src, index) => (
-          <div key={index} className="relative w-full h-[350px] flex-shrink-0 ">
+          <div key={index} className="relative w-full h-[500px] flex-shrink-0 ">
             <Image
               src={src}
               alt={`Slide ${index}`}

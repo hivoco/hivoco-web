@@ -37,7 +37,7 @@ function Bottom() {
               onClick={() => changeRoute("/razor-sharp")}
               className=" cursor-pointer font-sf-pro-display-bold font-normal text-base"
             >
-              RazorSharpNew
+              RazorSharp
             </small>
             <small
               onClick={() => changeRoute("/talking-brochures")}
@@ -54,7 +54,7 @@ function Bottom() {
               Contact Us
             </strong>
           </div>
-          <div className="flex justify-between gap-9 cursor-pointer">
+          <div className="flex justify-between gap-9 cursor-pointer flex-col md:flex-row">
             <Image
               onClick={() =>
                 handleRedirect("https://www.youtube.com/@hivocostudios")
