@@ -26,7 +26,7 @@ function index() {
             seven global patents and numerous research publications that anchor
             HiVoco’s technological edge.
           </p>
-          <div className="flex gap-5 py-7 justify-center items-center  ">
+          <div className="flex gap-5 py-7 xl:justify-center flex-col xl:flex-row items-center  ">
             <Image
               src={`/pngs/team.png`}
               alt="example"

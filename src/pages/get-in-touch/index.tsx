@@ -108,7 +108,7 @@ function index() {
               className="col-span-2 h-36"
             />
           </div>
-          <div className="mt-8  flex ring-1 ring-[#00000040] w-min rounded-lg ">
+          <div className="mt-8  flex ring-1 ring-[#00000040] xl:w-min w-full rounded-lg ">
             <input
               className="bg-transparent outline-none w-[400px] p-4 text-[#00000080] text-sm "
               placeholder={`Please upload below 10MB`}
