@@ -30,7 +30,7 @@ function index() {
       image: "Employee Training & Performance",
       question: "Employee Training & Performance",
       answer:
-        "Empower your team: Razor Sharp tracks interactions to highlight training needs, helping you develop top-performing employees and reduce turnover.",
+        "Empower your team: Razor Sharp tracks interactions to highlight training needs, helping you develop top-performing employees and reduce employee attrition.",
     },
     {
       image: "Actionable Real-time Notifications",
