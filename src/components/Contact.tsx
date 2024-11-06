@@ -1,7 +1,75 @@
 import Button from "@/elements/Button";
+import { useState } from "react";
+import axios from "axios";
 
+interface contactobject {
+  first: string;
+  last: string;
+  email: string;
+  message: string;
+}
 function Contact() {
-  const input = ["First Name", "Last Name", "Email", "Company"];
+  const input = ["First Name", "Last Name", "Email", "Message"];
+  const [error, setError] = useState<String>("");
+  const [success, setSuccess] = useState<String>("");
+  const [data, setData] = useState<contactobject>({
+    first: "",
+    last: "",
+    email: "",
+    message: "",
+  });
+  const submitDate = async () => {
+    if (!data.first) {
+      setError("Please enter first name");
+      return;
+    } else if (!data.last) {
+      setError("Please enter last name");
+      return;
+    } else if (!data.email) {
+      setError("Please enter first email");
+      return;
+    } else if (!data.message) {
+      setError("Please enter your's message");
+      return;
+    }
+    try {
+      const response = await axios.post(
+        "https://api.hivoco.com/contact/create",
+        JSON.stringify({
+          name: data.first + data.last,
+          email: data.email,
+          inquiry_description: data.message,
+        }),
+        {
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded",
+          },
+        }
+      );
+      console.log(response.data);
+      setSuccess("Thank's for your's message, We will connect with you ASAP");
+    } catch (error) {
+      console.error(error);
+      setError("Failed");
+    }
+  };
+  const onChangeFunction = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    setError("");
+    if (e.target.name === "First Name") {
+      setData({ ...data, first: e.target.value });
+    }
+    if (e.target.name === "Last Name") {
+      setData({ ...data, last: e.target.value });
+    }
+    if (e.target.name === "Email") {
+      setData({ ...data, email: e.target.value });
+    }
+    if (e.target.name === "Message") {
+      setData({ ...data, message: e.target.value });
+    }
+  };
   return (
     <div>
       <div className="container flex flex-col xl:flex-row gap-11 xl:gap-0 justify-between items-center px-5 xl:px-12 pt-24 pb-14  ">
@@ -21,17 +89,45 @@ function Contact() {
         <div className="flex flex-col justify-center items-center bg-white py-8 px-6 rounded-3xl gap-6 shadow-button-shadow">
           {input.map((n, index) => {
             return (
-              <input
-                key={index}
-                className="p-3 rounded-lg bg-[#E0E0E0] w-72 xl:w-80 text-black placeholder:text-gray-500 outline-none "
-                placeholder={n}
-              />
+              <>
+                {n === "Message" ? (
+                  <>
+                    <textarea
+                      onChange={onChangeFunction}
+                      key={index}
+                      name={n}
+                      rows={2}
+                      className={`p-3 rounded-lg bg-[#E0E0E0] w-72 xl:w-80 text-black placeholder:text-gray-500 outline-none `}
+                      placeholder={n}
+                    />
+                    {error && (
+                      <span className="text-xs text-red-800 font-sf-pro-display-normal w-full -mt-5">
+                        {error}
+                      </span>
+                    )}
+                    {success && (
+                      <span className="text-xs text-green-800 font-sf-pro-display-normal w-full -mt-5">
+                        {error}
+                      </span>
+                    )}
+                  </>
+                ) : (
+                  <input
+                    onChange={onChangeFunction}
+                    name={n}
+                    className="p-3 rounded-lg bg-[#E0E0E0] w-72 xl:w-80 text-black placeholder:text-gray-500 outline-none  "
+                    placeholder={n}
+                  />
+                )}
+              </>
             );
           })}
+
           <Button
             title="Connect with us"
             className="w-72 xl:w-80"
             isIcon={false}
+            onClick={() => submitDate()}
           />
         </div>
       </div>
