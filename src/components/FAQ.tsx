@@ -62,7 +62,7 @@ const FAQComponent: React.FC<props> = ({ image, faqs }) => {
           <strong>&nbsp;Features</strong>
         </small>
       </div>
-      <div className="flex flex-between-center p-12 bg-white rounded-3xl gap-24">
+      <div className="flex flex-between-center p-5 xl:p-12 bg-white rounded-3xl gap-24">
         <div className="xl:w-1/2 w-full">
           {faqs?.map((faq, index) => (
             <FAQItem

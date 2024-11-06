@@ -64,15 +64,15 @@ function Card({
         </div>
       </div>
 
-      <div className="relative ">
+      {/* <div className="relative "> */}
         <Image
           src={`/pngs/${image}.png`}
           alt="example"
           width={500}
           height={300}
-          className="object-cover h-auto w-auto  "
+          className="object-cover w-full xl:h-auto xl:w-auto  "
         />
-      </div>
+      {/* </div> */}
     </div>
   );
 }
