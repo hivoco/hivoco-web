@@ -139,3 +139,10 @@ body::-webkit-scrollbar {
   background-size: 100% 100%;
 }
 
+.loader {
+  border-radius: 50%;
+  border-top: 2px solid white;
+  border-right: 2px solid transparent;
+  border-bottom: 2px solid white;
+  border-left: 2px solid white;
+}

@@ -12,6 +12,7 @@ function Contact() {
   const input = ["First Name", "Last Name", "Email", "Message"];
   const [error, setError] = useState<String>("");
   const [success, setSuccess] = useState<String>("");
+  const [isLoading, setIsLoading] = useState<boolean>(false);
   const [data, setData] = useState<contactobject>({
     first: "",
     last: "",
@@ -33,8 +34,11 @@ function Contact() {
       return;
     }
     try {
+      setError("");
+      setIsLoading(true);
       const response = await axios.post(
-        "https://api.hivoco.com/contact/create",
+        // "https://api.hivoco.com/contact/create",
+        "http://localhost:8815/contact/create",
         JSON.stringify({
           name: data.first + data.last,
           email: data.email,
@@ -47,10 +51,16 @@ function Contact() {
         }
       );
       console.log(response.data);
-      setSuccess("Thank's for your's message, We will connect with you ASAP");
+      setSuccess("Thank you for reaching out. We’ll be in touch shortly.");
+      setData({ ...data, first: "", last: "", email: "", message: "" });
+      setIsLoading(false);
+      setTimeout(() => {
+        setSuccess("");
+      }, 5000);
     } catch (error) {
       console.error(error);
       setError("Failed");
+      setIsLoading(false);
     }
   };
   const onChangeFunction = (
@@ -99,6 +109,7 @@ function Contact() {
                       rows={2}
                       className={`p-3 rounded-lg bg-[#E0E0E0] w-72 xl:w-80 text-black placeholder:text-gray-500 outline-none `}
                       placeholder={n}
+                      value={data.message}
                     />
                     {error && (
                       <span className="text-xs text-red-800 font-sf-pro-display-normal w-full -mt-5">
@@ -106,8 +117,8 @@ function Contact() {
                       </span>
                     )}
                     {success && (
-                      <span className="text-xs text-green-800 font-sf-pro-display-normal w-full -mt-5">
-                        {error}
+                      <span className="text-xs text-green-800 font-sf-pro-display-bold font-sf-pro-display-medium w-full -mt-5">
+                        {success}
                       </span>
                     )}
                   </>
@@ -117,6 +128,15 @@ function Contact() {
                     name={n}
                     className="p-3 rounded-lg bg-[#E0E0E0] w-72 xl:w-80 text-black placeholder:text-gray-500 outline-none  "
                     placeholder={n}
+                    value={
+                      n === "First Name"
+                        ? data.first
+                        : n === "Last Name"
+                        ? data.last
+                        : n === "Email"
+                        ? data.email
+                        : ""
+                    }
                   />
                 )}
               </>
@@ -128,6 +148,7 @@ function Contact() {
             className="w-72 xl:w-80"
             isIcon={false}
             onClick={() => submitDate()}
+            isLoading={isLoading}
           />
         </div>
       </div>
