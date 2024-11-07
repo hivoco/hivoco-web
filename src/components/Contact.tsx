@@ -20,6 +20,7 @@ function Contact() {
     message: "",
   });
   const submitDate = async () => {
+    // Validate the input fields
     if (!data.first) {
       setError("Please enter first name");
       return;
@@ -27,23 +28,26 @@ function Contact() {
       setError("Please enter last name");
       return;
     } else if (!data.email) {
-      setError("Please enter first email");
+      setError("Please enter email");
       return;
     } else if (!data.message) {
-      setError("Please enter your's message");
+      setError("Please enter your message");
       return;
     }
+
     try {
       setError("");
       setIsLoading(true);
+
+      // Create URLSearchParams object for form encoding
+      const formData = new URLSearchParams();
+      formData.append("name", data.first + " " + data.last);
+      formData.append("email", data.email);
+      formData.append("inquiry_description", data.message);
+
       const response = await axios.post(
-        // "https://api.hivoco.com/contact/create",
-        "http://localhost:8815/contact/create",
-        JSON.stringify({
-          name: data.first + data.last,
-          email: data.email,
-          inquiry_description: data.message,
-        }),
+        "https://api.hivoco.com/contact/create",
+        formData,
         {
           headers: {
             "Content-Type": "application/x-www-form-urlencoded",
@@ -51,15 +55,17 @@ function Contact() {
         }
       );
       console.log(response.data);
+
+      // Success handling
       setSuccess("Thank you for reaching out. We’ll be in touch shortly.");
-      setData({ ...data, first: "", last: "", email: "", message: "" });
+      setData({ first: "", last: "", email: "", message: "" });
       setIsLoading(false);
       setTimeout(() => {
         setSuccess("");
       }, 5000);
     } catch (error) {
       console.error(error);
-      setError("Failed");
+      setError("Failed to send the message.");
       setIsLoading(false);
     }
   };
@@ -117,7 +123,7 @@ function Contact() {
                       </span>
                     )}
                     {success && (
-                      <span className="text-xs text-green-800 font-sf-pro-display-bold font-sf-pro-display-medium w-full -mt-5">
+                      <span className="text-xs text-green-800  font-sf-pro-display-medium w-full -mt-5">
                         {success}
                       </span>
                     )}
