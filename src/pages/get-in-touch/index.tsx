@@ -203,7 +203,6 @@ function index() {
   const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0]; // Get the first selected file
     if (file) {
-      console.log("Selected file:", file);
       setData({ ...data, img: file });
       setData({ ...data, image_name: file.name });
     }

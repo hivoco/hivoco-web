@@ -28,7 +28,8 @@ const config: Config = {
        fontFamily: {
         'sf-pro-display-normal': ['SFProDisplayNormal', 'sans-serif'],
         'sf-pro-display-medium': ['SFProDisplayMedium', 'sans-serif'],
-        'sf-pro-display-bold': ['SFProDisplayBold', 'sans-serif']
+        'sf-pro-display-bold': ['SFProDisplayBold', 'sans-serif'],
+        'galantic': ['Galantic-OGZXP', 'sans-serif'],
       },
        boxShadow: {
         'button-shadow': '0px 2.17px 5.79px 0px #0000003D',

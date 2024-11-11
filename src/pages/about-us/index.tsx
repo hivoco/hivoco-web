@@ -66,10 +66,10 @@ function index() {
             </h2>
             <div className="flex gap-28">
               <small className="text-lg font-normal font-sf-pro-display-normal">
-                Email- <a href="mailto:hi@hivoco.com">hi@hivoco.com </a>
+                Email- <a href="mailto:hi@hivoco.com">pritesh@hivoco.com </a>
               </small>
               <small className="text-lg font-normal font-sf-pro-display-normal">
-                Contact number- <a href="tel:+918285022022">8285022022</a>
+                Phone- <a href="tel:+918285022022">8285022022</a>
               </small>
             </div>
           </div>

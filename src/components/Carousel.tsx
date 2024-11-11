@@ -12,7 +12,7 @@ export default function Carousel({ title, paragraph }: props) {
     >
       <div className="flex flex-col items-center xl:items-start">
         <div className="relative mt-6 xl:mt-0">
-          <h2 className="font-sf-pro-display-bold text-3xl md:text-4xl lg:text-5xl font-bold">
+          <h2 className="galanticFontClass text-3xl md:text-4xl lg:text-5xl font-bold">
             {title}
           </h2>
           <p

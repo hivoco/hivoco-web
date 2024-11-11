@@ -101,7 +101,35 @@ function Contact() {
             Let us know how we can help you with your next big idea or
             challenge.
           </p>
+
+          <div className="pt-11 flex flex-col gap-y-4">
+            <div>
+              <img
+                src="/svgs/email.svg"
+                alt="Email"
+                srcSet=""
+                className="inline"
+              />{" "}
+              &nbsp;&nbsp;&nbsp;
+              <small className="text-lg font-normal font-sf-pro-display-normal">
+                Email- <a href="mailto:hi@hivoco.com">pritesh@hivoco.com </a>
+              </small>
+            </div>
+            <div>
+              <img
+                src="/svgs/phone.svg"
+                alt="Phone"
+                srcSet=""
+                className="inline"
+              />{" "}
+              &nbsp;&nbsp;&nbsp;
+              <small className="text-lg font-normal font-sf-pro-display-normal">
+                Phone- <a href="tel:+918285022022">8285022022</a>
+              </small>
+            </div>
+          </div>
         </div>
+
         <div className="flex flex-col justify-center items-center bg-white py-8 px-6 rounded-3xl gap-6 shadow-button-shadow">
           {input.map((n, index) => {
             return (
