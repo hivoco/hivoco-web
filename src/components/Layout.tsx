@@ -51,10 +51,7 @@ const Layout: React.FC<LayoutProps> = ({
           }
         />
         <meta property="og:image" content={ogImage || "/svgs/HV.svg"} />
-        <meta
-          property="og:url"
-          content={ogUrl || "https://www.hivocostudios.com"}
-        />
+        <meta property="og:url" content={ogUrl || "https://www.hivoco.com"} />
         <meta property="og:type" content="website" />
 
         {/* Twitter Card Meta Tags */}
