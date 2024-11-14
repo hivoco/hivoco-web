@@ -133,7 +133,7 @@ function Contact() {
         <div className="flex flex-col justify-center items-center bg-white py-8 px-6 rounded-3xl gap-6 shadow-button-shadow">
           {input.map((n, index) => {
             return (
-              <>
+              <div key={index}>
                 {n === "Message" ? (
                   <>
                     <textarea
@@ -173,7 +173,7 @@ function Contact() {
                     }
                   />
                 )}
-              </>
+              </div>
             );
           })}
 
