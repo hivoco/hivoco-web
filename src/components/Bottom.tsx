@@ -53,6 +53,39 @@ function Bottom() {
             >
               Contact Us
             </strong>
+            <strong
+              // onClick={() => changeRoute("/get-in-touch")}
+              className="font-sf-pro-display-bold font-medium cursor-pointer text-lg"
+            >
+              Office Locations:
+            </strong>
+            <div className="flex items-center">
+              <img
+                src="/svgs/location.svg"
+                alt="Phone"
+                srcSet=""
+                className="inline w-5 h-5"
+              />{" "}
+              &nbsp;&nbsp;&nbsp;
+              <small className="text-base font-normal font-sf-pro-display-normal">
+                9400 W. Parmer Ln. <br /> Austin - 78717
+                <br /> Texas, US
+              </small>
+            </div>
+            <div className="flex items-center">
+              <img
+                src="/svgs/location.svg"
+                alt="Phone"
+                srcSet=""
+                className="inline w-5 h-5"
+              />{" "}
+              &nbsp;&nbsp;&nbsp;
+              <small className="text-base font-normal font-sf-pro-display-normal">
+                18 Chuncha,
+                <br /> 9th Main Rd, 2nd Block, Jaya Nagar,
+                <br /> Bengaluru, INDIA
+              </small>
+            </div>
           </div>
           <div className="flex justify-between gap-9 cursor-pointer flex-col md:flex-row">
             <Image

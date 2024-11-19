@@ -124,7 +124,19 @@ function Contact() {
               />{" "}
               &nbsp;&nbsp;&nbsp;
               <small className="text-lg font-normal font-sf-pro-display-normal">
-                Phone- <a href="tel:+918285022022">8285022022</a>
+                Phone- <a href="tel:+918285022022">+91 8285022022</a>
+              </small>
+            </div>
+            <div>
+              <img
+                src="/svgs/location.svg"
+                alt="Phone"
+                srcSet=""
+                className="inline"
+              />{" "}
+              &nbsp;&nbsp;&nbsp;
+              <small className="text-lg font-normal font-sf-pro-display-normal">
+                3183, Sector D-3, Church Road, Vasant Kunj New Delhi, INDIA
               </small>
             </div>
           </div>
