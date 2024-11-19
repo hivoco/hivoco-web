@@ -59,25 +59,25 @@ function Bottom() {
             >
               Office Locations:
             </strong>
-            <div className="flex items-center">
+            <div className="flex  ">
               <img
                 src="/svgs/location.svg"
                 alt="Phone"
                 srcSet=""
-                className="inline w-5 h-5"
+                className="inline w-5 h-5 mt-1"
               />{" "}
               &nbsp;&nbsp;&nbsp;
-              <small className="text-base font-normal font-sf-pro-display-normal">
+              <small className="text-base  font-normal font-sf-pro-display-normal">
                 9400 W. Parmer Ln. <br /> Austin - 78717
                 <br /> Texas, US
               </small>
             </div>
-            <div className="flex items-center">
+            <div className="flex ">
               <img
                 src="/svgs/location.svg"
                 alt="Phone"
                 srcSet=""
-                className="inline w-5 h-5"
+                className="inline w-5 h-5 mt-1"
               />{" "}
               &nbsp;&nbsp;&nbsp;
               <small className="text-base font-normal font-sf-pro-display-normal">
