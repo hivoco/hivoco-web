@@ -54,7 +54,6 @@ function Contact() {
           },
         }
       );
-      console.log(response.data);
 
       // Success handling
       setSuccess("Thank you for reaching out. We’ll be in touch shortly.");
@@ -157,6 +156,7 @@ function Contact() {
                       placeholder={n}
                       value={data.message}
                     />
+                    <br />
                     {error && (
                       <span className="text-xs text-red-800 font-sf-pro-display-normal w-full -mt-5">
                         {error}

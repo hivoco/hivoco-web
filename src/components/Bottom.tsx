@@ -151,4 +151,4 @@ function Bottom() {
 }
 
 export default Bottom;
-// background: linear-gradient(167.67deg, #82A5F3 0%, #6969AF 100%);
+
