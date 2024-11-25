@@ -111,7 +111,8 @@ function Contact() {
               />{" "}
               &nbsp;&nbsp;&nbsp;
               <small className="text-lg font-normal font-sf-pro-display-normal">
-                Email- <a href="mailto:hi@hivoco.com">pritesh@hivoco.com </a>
+                Email-{" "}
+                <a href="mailto:pritesh@hivoco.com">pritesh@hivoco.com </a>
               </small>
             </div>
             <div>
