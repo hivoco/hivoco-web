@@ -48,8 +48,8 @@ export default function ImageCarousel() {
             <Image
               src={src}
               alt={`Slide ${index}`}
-              layout="fill"
-              objectFit="cover"
+              width={500}
+              height={500}
               className="w-full h-full rounded-3xl"
             />
           </div>
