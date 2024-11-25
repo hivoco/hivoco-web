@@ -54,28 +54,30 @@ function HomePage() {
           id="bharat-bhasha"
           title={"BharatBhashaNew"}
           paragraph={
-            "Human-like conversational AI tailored for India's diverse languages, <br/> transforming telephonic sales interactions. With support for over 10 <br/> regional languages and seamless integration with existing systems,<br/> it delivers real-time, natural conversations that boost engagement <br/> and conversion rates. Scalable and customizable, Bharat Bhasha AI <br/> is the ideal telephonic solution for businesses looking to connect <br/> authentically with their customers while driving actionable insights <br/>and enhancing sales efficiency."
+            "Human-like conversational AI tailored for India's diverse languages, <br class='hidden md:block' /> transforming telephonic sales interactions. With support for over 10 <br class='hidden md:block' /> regional languages and seamless integration with existing systems, <br class='hidden md:block' /> it delivers real-time, natural conversations that boost engagement <br class='hidden md:block' /> and conversion rates. Scalable and customizable, Bharat Bhasha AI <br class='hidden md:block' /> is the ideal telephonic solution for businesses looking to connect <br class='hidden md:block' /> authentically with their customers while driving actionable insights <br class='hidden md:block' /> and enhancing sales efficiency."
           }
           image={"bharatImg"}
           isLeft={true}
           scheduleFunction={handleScroll}
           buttonFunction={() => changeRoute("/bharat-bhasha")}
         />
+
         <Card
           id="razor-sharp"
           title={"RazorSharpNew"}
           paragraph={
-            "Turn your store's video and voice data into actionable <br/> insights. Razor Sharp helps you uncover hidden <br/> opportunities, optimise operations, and boost customer <br/> satisfaction through Insights and Real-time Actionable <br/>Notifications."
+            "Turn your store's video and voice data into actionable <br class='hidden md:block' /> insights. Razor Sharp helps you uncover hidden <br class='hidden md:block' /> opportunities, optimise operations, and boost customer <br class='hidden md:block' /> satisfaction through Insights and Real-time Actionable <br class='hidden md:block' /> Notifications."
           }
           image={"razorSharpImg"}
           scheduleFunction={handleScroll}
           buttonFunction={() => changeRoute("/razor-sharp")}
         />
+
         <Card
           id="talking-brochure"
           title={"TalkingBrochuresNew"}
           paragraph={
-            "Revolutionize brand communication by turning traditional <br/> marketing collaterals into interactive, Multilingual Industry <br/> First AI-powered experiences. Designed for Indic <br/> Languages and with seamless voice & visual engagement, <br/> it goes beyond static PDFs, offering real-time updates and <br/> boosting customer interaction across multiple channels."
+            "Revolutionize brand communication by turning traditional <br class='hidden md:block' /> marketing collaterals into interactive, Multilingual Industry <br class='hidden md:block' /> First AI-powered experiences. Designed for Indic <br class='hidden md:block' /> Languages and with seamless voice & visual engagement, <br class='hidden md:block' /> it goes beyond static PDFs, offering real-time updates and <br class='hidden md:block' /> boosting customer interaction across multiple channels."
           }
           image={"talkingImg"}
           isLeft={true}
@@ -86,7 +88,7 @@ function HomePage() {
         <Carousel
           title={"Creative Studio"}
           paragraph={
-            "Enhance Customer Engagement with AI-Driven Gamified <br/>  Experiences. Transform simple packaging into an innovative <br/>  marketing asset. "
+            "Enhance Customer Engagement with AI-Driven Gamified <br class='hidden md:block' /> Experiences. Transform simple packaging into an innovative <br class='hidden md:block' /> marketing asset."
           }
         />
       </section>

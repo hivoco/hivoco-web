@@ -57,7 +57,7 @@ function index() {
         <Card
           title={"BharatBhashaNew"}
           paragraph={
-            "Human-like conversational AI tailored for India's diverse languages, <br/> transforming telephonic sales interactions. With support for over 10 <br/> regional languages and seamless integration with existing systems,<br/> it delivers real-time, natural conversations that boost engagement <br/> and conversion rates. Scalable and customizable, Bharat Bhasha AI <br/> is the ideal telephonic solution for businesses looking to connect <br/> authentically with their customers while driving actionable insights <br/>and enhancing sales efficiency."
+            "Human-like conversational AI tailored for India's diverse languages, <br class='hidden md:block' /> transforming telephonic sales interactions. With support for over 10 <br class='hidden md:block' /> regional languages and seamless integration with existing systems, <br class='hidden md:block' /> it delivers real-time, natural conversations that boost engagement <br class='hidden md:block' /> and conversion rates. Scalable and customizable, Bharat Bhasha AI <br class='hidden md:block' /> is the ideal telephonic solution for businesses looking to connect <br class='hidden md:block' /> authentically with their customers while driving actionable insights <br class='hidden md:block' /> and enhancing sales efficiency."
           }
           image={"bharatImg"}
           buttontext={"Schedule a demo"}

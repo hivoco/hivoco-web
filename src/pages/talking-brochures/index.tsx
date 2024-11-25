@@ -58,7 +58,7 @@ function index() {
         <Card
           title={"TalkingBrochuresNew"}
           paragraph={
-            "Revolutionize brand communication by turning traditional <br/> marketing collaterals into interactive, Multilingual Industry <br/> First AI-powered experiences. Designed for Indic <br/> Languages and with seamless voice & visual engagement, <br/> it goes beyond static PDFs, offering real-time updates and <br/> boosting customer interaction across multiple channels."
+            "Revolutionize brand communication by turning traditional <br class='hidden md:block' /> marketing collaterals into interactive, Multilingual Industry <br class='hidden md:block' /> First AI-powered experiences. Designed for Indic <br class='hidden md:block' /> Languages and with seamless voice & visual engagement, <br class='hidden md:block' /> it goes beyond static PDFs, offering real-time updates and <br class='hidden md:block' /> boosting customer interaction across multiple channels."
           }
           image={"talkingImg"}
           buttontext={"Schedule a demo"}

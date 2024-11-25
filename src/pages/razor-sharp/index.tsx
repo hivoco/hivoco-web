@@ -46,7 +46,7 @@ function index() {
         <Card
           title={"RazorSharpNew"}
           paragraph={
-            "Turn your store's video and voice data into actionable <br/> insights. Razor Sharp helps you uncover hidden <br/> opportunities, optimise operations, and boost customer <br/> satisfaction through Insights and Real-time Actionable <br/>Notifications."
+            "Turn your store's video and voice data into actionable <br class='hidden md:block' /> insights. Razor Sharp helps you uncover hidden <br class='hidden md:block' /> opportunities, optimise operations, and boost customer <br class='hidden md:block' /> satisfaction through Insights and Real-time Actionable <br class='hidden md:block' /> Notifications."
           }
           image={"razorSharpImg"}
           buttontext="Schedule a demo"
