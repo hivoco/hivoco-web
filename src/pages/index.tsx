@@ -84,69 +84,40 @@ function HomePage() {
 
       <>
         {showFirstSection ? (
-          <>
-            <section>
-              <div className="relative  ">
-                <div className=" container py-52 px-5 xl:px-20 flex flex-col justify-center items-center gap-4 ">
-                  <div className="relative h-[100px] w-full overflow-hidden  flex items-center justify-center  ">
-                    {words.map((word, index) => (
-                      <div
-                        key={index}
-                        className={`absolute w-full text-center  transition-transform duration-700 ease-in-out ${getPosition(
-                          index
-                        )} hover:text-transparent z-40 bg-clip-text bg-gradient-to-r from-red-700 to-blue-700 transition-colors duration-300 ease-in-out`}
+          <section>
+            <div className="relative  ">
+              <div className=" container py-52 px-5 xl:px-20 flex flex-col justify-center items-center gap-4 ">
+                <div className="relative h-[100px] w-full overflow-hidden  flex items-center justify-center  ">
+                  {words.map((word, index) => (
+                    <div
+                      key={index}
+                      className={`absolute w-full text-center  transition-transform duration-700 ease-in-out ${getPosition(
+                        index
+                      )} hover:text-transparent z-40 bg-clip-text bg-gradient-to-r from-red-700 to-blue-700 transition-colors duration-300 ease-in-out`}
+                    >
+                      <h2
+                        onClick={handleFirstSectionClick}
+                        className="font-bold md:text-6xl xl:text-8xl text-4xl uppercase tracking-wider  cursor-pointer font-sf-pro-display-bold"
                       >
-                        <h2
-                          onClick={handleFirstSectionClick}
-                          className="font-bold md:text-6xl xl:text-8xl text-4xl uppercase tracking-wider  cursor-pointer font-sf-pro-display-bold"
-                        >
-                          {" "}
-                          {word}
-                        </h2>
-                      </div>
-                    ))}
-                  </div>
-                  <p className=" font-sf-pro-display-normal text-p-gray text-xl lg:text-lg font-light mt-5 ">
-                    Click on keyword to view details
-                  </p>
+                        {" "}
+                        {word}
+                      </h2>
+                    </div>
+                  ))}
                 </div>
-                <Image
-                  src={`/bg/Landing pg. BG.png`}
-                  alt="example"
-                  width={500}
-                  height={300}
-                  className="absolute -top-10 right-0   "
-                />
+                <p className=" font-sf-pro-display-normal text-p-gray text-xl lg:text-lg font-light mt-5 ">
+                  Click on keyword to view details
+                </p>
               </div>
-            </section>
-            <section>
-              <div className="relative  ">
-                <div className=" container px-5 xl:px-20 py-10 z-40 ">
-                  <div className="text-center flex flex-col gap-5 justify-center items-center">
-                    <p className="text-[#2C2C2C] font-sf-pro-display-normal text-sm lg:text-base  pb-6 z-40">
-                      HiVoco Studio’s patent-published tech helps you to
-                      meaningfully engage <br className="hidden md:block" />{" "}
-                      with your users, solve business problems & drive
-                      profitable growth.
-                    </p>
-                    <Button
-                      onClick={handleScroll}
-                      title={`Contact With Us`}
-                      className={`w-56`}
-                    />
-                  </div>
-                </div>
-
-                <Image
-                  src={`/bg/Landing pg BG-2.png`}
-                  alt="example"
-                  width={500}
-                  height={300}
-                  className="absolute -top-10 right-0   "
-                />
-              </div>
-            </section>
-          </>
+              <Image
+                src={`/bg/Landing pg. BG.png`}
+                alt="example"
+                width={500}
+                height={300}
+                className="absolute -top-10 right-0   "
+              />
+            </div>
+          </section>
         ) : (
           <section className="animate-expand transition-all duration-700 ease-in-out">
             <HomeCard
@@ -185,6 +156,32 @@ function HomePage() {
           </section>
         )}
       </>
+      <section>
+        <div className="relative  ">
+          <div className=" container px-5 xl:px-20 py-10 z-40 ">
+            <div className="text-center flex flex-col gap-5 justify-center items-center">
+              <p className="text-black font-sf-pro-display-normal text-sm lg:text-xl font-semibold z-40">
+                HiVoco Studio’s patent-published tech helps you to meaningfully
+                engage <br className="hidden md:block" /> with your users, solve
+                business problems & drive profitable growth.
+              </p>
+              <Button
+                onClick={handleScroll}
+                title={`Contact With Us`}
+                className={`w-56`}
+              />
+            </div>
+          </div>
+
+          <Image
+            src={`/bg/Landing pg BG-2.png`}
+            alt="example"
+            width={500}
+            height={300}
+            className="absolute -top-10 right-0   "
+          />
+        </div>
+      </section>
       <section>
         <Awards />
       </section>
