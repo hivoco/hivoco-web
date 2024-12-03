@@ -47,12 +47,12 @@ function Bottom() {
             </small>
           </div>
           <div className="flex flex-col gap-3">
-            <strong
+            {/* <strong
               onClick={() => changeRoute("/get-in-touch")}
               className="font-sf-pro-display-bold font-medium cursor-pointer text-lg"
             >
               Contact Us
-            </strong>
+            </strong> */}
             <strong
               // onClick={() => changeRoute("/get-in-touch")}
               className="font-sf-pro-display-bold font-medium cursor-pointer text-lg"

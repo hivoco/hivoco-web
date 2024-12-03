@@ -19,11 +19,20 @@ const config: Config = {
       center:true,
     },
     extend: {
+       transitionProperty: {
+        'transform': 'transform',
+        'opacity': 'opacity',
+      },
+   
+        backgroundImage: {
+        'hero-bg': "url('/pngs/hero-bg.png')",
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
         'p-gray':"#7A7A7A",
         'buttonColor':'#F25F3E'
+        
       },
        fontFamily: {
         'sf-pro-display-normal': ['SFProDisplayNormal', 'sans-serif'],

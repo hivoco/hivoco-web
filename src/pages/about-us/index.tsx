@@ -13,7 +13,7 @@ function index() {
           <h2 className="font-sf-pro-display-bold text-3xl xl:text-8xl font-bold">
             About Us
           </h2>
-          <p className="text-[##000000] font-sf-pro-display-normal text-sm lg:text-base mt-4">
+          <p className="text-[#000000] font-sf-pro-display-normal text-sm lg:text-base mt-4">
             Welcome to HiVoco Studios, where cutting-edge technology fuels
             impactful solutions. Specializing in computer vision, voice AI,
             video AI and interactive content, we deliver business solutions that
