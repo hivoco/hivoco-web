@@ -80,7 +80,7 @@ function Bottom() {
           </div>
         </div>
         <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-between items-center mt-8">
-          <div className="flex gap-5 text-white mt-8">
+          <div className="flex gap-5 text-white ">
             <small className=" cursor-pointer font-sf-pro-display-bold font-normal text-base">
               © Hivoco Studios
             </small>
