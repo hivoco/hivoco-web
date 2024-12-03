@@ -37,7 +37,7 @@ function HomeCard({
           isLeft ? "xl:flex-row-reverse" : "xl:flex-row"
         }`}
       >
-        <h2 className="font-bold font-sf-pro-display-bold text-4xl uppercase z-40  cursor-pointer hover:text-transparent bg-clip-text bg-gradient-to-r from-red-700 to-blue-700 transition-colors duration-300 ease-in-out">
+        <h2 className="font-bold font-sf-pro-display-bold text-4xl xl:text-5xl  uppercase z-40  cursor-pointer hover:text-transparent bg-clip-text bg-gradient-to-r from-red-700 to-blue-700 transition-colors duration-300 ease-in-out">
           {title}
         </h2>
 
