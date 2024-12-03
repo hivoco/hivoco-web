@@ -7,10 +7,10 @@ import { useEffect } from "react";
 export default function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
     AOS.init({
-      delay: 200,
+      delay: 500,
       duration: 1000, // Customize animation duration
-      once: true, // Whether animation should happen only once
-      easing: "ease-in-out", // Easing function for animations
+      once: false, // Whether animation should happen only once
+      easing: "ease-out", // Easing function for animations
     });
   }, []);
   return <Component {...pageProps} />;

@@ -12,7 +12,7 @@ function Bottom() {
     window.open(`${url}`, "_blank", "noopener,noreferrer");
   };
   return (
-    <div className="border-t-[0.5px] border-t-blue-200">
+    <footer className="border-t-[0.5px] border-t-blue-200">
       <div className="container   px-5 xl:px-20 pt-20 pb-14   ">
         <div className="flex justify-between items-start  w-full text-white">
           <Image
@@ -47,16 +47,7 @@ function Bottom() {
             </small>
           </div>
           <div className="flex flex-col gap-3">
-            {/* <strong
-              onClick={() => changeRoute("/get-in-touch")}
-              className="font-sf-pro-display-bold font-medium cursor-pointer text-lg"
-            >
-              Contact Us
-            </strong> */}
-            <strong
-              // onClick={() => changeRoute("/get-in-touch")}
-              className="font-sf-pro-display-bold font-medium cursor-pointer text-lg"
-            >
+            <strong className="font-sf-pro-display-bold font-medium cursor-pointer text-lg">
               Office Locations:
             </strong>
             <div className="flex  ">
@@ -68,7 +59,7 @@ function Bottom() {
               />{" "}
               &nbsp;&nbsp;&nbsp;
               <small className="text-base  font-normal font-sf-pro-display-normal">
-                9400 W. Parmer Ln. <br /> Austin - 78717
+                9400 W. Parmer Ln. Austin - 78717
                 <br /> Texas, US
               </small>
             </div>
@@ -81,9 +72,8 @@ function Bottom() {
               />{" "}
               &nbsp;&nbsp;&nbsp;
               <small className="text-base font-normal font-sf-pro-display-normal">
-                18 Chuncha,
-                <br /> 9th Main Rd, 2nd Block, Jaya Nagar,
-                <br /> Bengaluru, INDIA
+                18 Chuncha, 9th Main Rd, 2nd <br /> Block, Jaya Nagar,
+                Bengaluru, <br /> INDIA
               </small>
             </div>
           </div>
@@ -122,20 +112,6 @@ function Bottom() {
           </div>
         </div>
         <div className="flex flex-col mt-5">
-          {/* <div className="flex gap-5">
-            <Image
-              src={"/pngs/Ellipse 3.png"}
-              alt={`Slide`}
-              width={54}
-              height={54}
-            />
-            <Image
-              src={"/pngs/Ellipse 3.png"}
-              alt={`Slide`}
-              width={54}
-              height={54}
-            />
-          </div> */}
           <div className="flex gap-5 text-white mt-8">
             <small className=" cursor-pointer font-sf-pro-display-bold font-normal text-base">
               © Hivoco Studios
@@ -146,9 +122,8 @@ function Bottom() {
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   );
 }
 
 export default Bottom;
-

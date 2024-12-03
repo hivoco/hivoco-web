@@ -35,18 +35,18 @@ function Header() {
       subMenu: [
         { id: 1, name: "Bharat Bhasha.AI", path: "/bharat-bhasha" },
         { id: 2, name: "Razor Sharp", path: "/razor-sharp" },
-        { id: 3, name: "Talking Brochure", path: "/talking-brochures" },
+        // { id: 3, name: "Talking Brochure", path: "/talking-brochures" },
       ],
     },
     { id: 4, name: "Contact Us", path: "/get-in-touch" },
   ];
 
   const [isSubMenuOpen, setSubMenuOpen] = useState(false);
-  const [isMenuOpen, setMenuOpen] = useState(false); // State for burger menu
+  const [isMenuOpen, setMenuOpen] = useState(false); 
 
   return (
     <>
-      <div
+      <header
         className={`h-[90px] w-screen ${styles.flex} shadow-header-shadow z-50`}
       >
         <div
@@ -86,7 +86,7 @@ function Header() {
             {headertitle.map((n) => (
               <div
                 key={n.id}
-                className="relative"
+                className="relative cursor-pointer"
                 onMouseEnter={() => n.id === 3 && setSubMenuOpen(true)}
                 onMouseLeave={() => n.id === 3 && setSubMenuOpen(false)}
               >
@@ -129,7 +129,7 @@ function Header() {
             ))}
           </div>
         </div>
-      </div>
+      </header>
       <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} />
     </>
   );

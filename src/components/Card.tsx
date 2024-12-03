@@ -63,8 +63,6 @@ function Card({
           )}
         </div>
       </div>
-
-      {/* <div className="relative "> */}
         <Image
           src={`/pngs/${image}.png`}
           alt="example"
@@ -72,7 +70,7 @@ function Card({
           height={300}
           className="object-cover w-full xl:h-auto xl:w-auto  "
         />
-      {/* </div> */}
+
     </div>
   );
 }

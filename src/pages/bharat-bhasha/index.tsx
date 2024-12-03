@@ -4,6 +4,7 @@ import Contact from "@/components/Contact";
 import FAQComponent from "@/components/FAQ";
 
 import Header from "@/components/Header";
+import HomeCard from "@/components/HomeCard";
 import Layout from "@/components/Layout";
 import React, { useRef } from "react";
 
@@ -54,16 +55,19 @@ function index() {
     <Layout>
       <Header />
       <section>
-        <Card
-          title={"BharatBhashaNew"}
+        <HomeCard
+          id="bharat-bhasha"
+          title={"Bharat Bhasha.aI"}
           paragraph={
-            "Human-like conversational AI tailored for India's diverse languages, <br class='hidden md:block' /> transforming telephonic sales interactions. With support for over 10 <br class='hidden md:block' /> regional languages and seamless integration with existing systems, <br class='hidden md:block' /> it delivers real-time, natural conversations that boost engagement <br class='hidden md:block' /> and conversion rates. Scalable and customizable, Bharat Bhasha AI <br class='hidden md:block' /> is the ideal telephonic solution for businesses looking to connect <br class='hidden md:block' /> authentically with their customers while driving actionable insights <br class='hidden md:block' /> and enhancing sales efficiency."
+            "Turn your store's video and voice data into actionable <br class='hidden md:block' /> insights. Razor Sharp helps you uncover hidden <br class='hidden md:block' /> opportunities, optimise operations, and boost customer <br class='hidden md:block' /> satisfaction through Insights and Real-time Actionable <br class='hidden md:block' /> Notifications."
           }
-          image={"bharatImg"}
+          image={"BharatBhashaNew"}
+          // scheduleFunction={handleScroll}
+          buttonFunction={handleScroll}
           buttontext={"Schedule a demo"}
           buttonclass={"w-56"}
           issecondbutton={false}
-          buttonFunction={handleScroll}
+          animation={"fade-left"}
         />
       </section>
 

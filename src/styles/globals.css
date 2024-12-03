@@ -165,3 +165,14 @@ body::-webkit-scrollbar {
 .animate-expand {
   animation: expand 0.7s ease-in-out;
 }
+
+/* Increase the starting translation for fade-left animations */
+[data-aos="fade-left"] {
+  transform: translateX(-5000px); /* Start 500px to the left */
+  opacity: 0; /* Ensure it's invisible initially */
+}
+
+[data-aos="fade-left"].aos-animate {
+  transform: translateX(0); /* Reset to normal position */
+  opacity: 1; /* Make it fully visible */
+}

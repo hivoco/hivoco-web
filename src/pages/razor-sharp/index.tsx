@@ -4,6 +4,7 @@ import Contact from "@/components/Contact";
 import FAQComponent from "@/components/FAQ";
 import GlassCard from "@/components/GlassCard";
 import Header from "@/components/Header";
+import HomeCard from "@/components/HomeCard";
 import Layout from "@/components/Layout";
 
 import React, { useRef } from "react";
@@ -43,16 +44,21 @@ function index() {
     <Layout>
       <Header />
       <section>
-        <Card
-          title={"RazorSharpNew"}
+      
+        <HomeCard
+          id="razor-sharp"
+          title={"razor-sharp"}
           paragraph={
             "Turn your store's video and voice data into actionable <br class='hidden md:block' /> insights. Razor Sharp helps you uncover hidden <br class='hidden md:block' /> opportunities, optimise operations, and boost customer <br class='hidden md:block' /> satisfaction through Insights and Real-time Actionable <br class='hidden md:block' /> Notifications."
           }
-          image={"razorSharpImg"}
+          
+          image={"RazorSharpNew"}
           buttontext="Schedule a demo"
           buttonclass={"w-56"}
           issecondbutton={false}
           buttonFunction={handleScroll}
+         
+          animation={"fade-left"}
         />
       </section>
       <section>

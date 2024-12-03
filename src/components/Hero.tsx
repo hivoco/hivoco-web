@@ -9,11 +9,6 @@ const Hero = ({ handleScroll }: props) => {
   return (
     <div
       className=" w-full xl:h-[500px] bg-cover bg-no-repeat bg-hero-bg"
-      // style={{
-      //   backgroundImage:
-      //     "linear-gradient(to bottom, #F8F8F8, #F8F8F8), url('/pngs/hero.png')",
-      //   backgroundBlendMode: "overlay",
-      // }}
     >
       <div className="flex container flex-col  px-5 xl:px-20 py-28 gap-5 text-left text-black">
         <h2 className="font-sf-pro-display-bold text-4xl xl:text-8xl font-bold">

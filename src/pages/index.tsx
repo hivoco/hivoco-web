@@ -38,17 +38,17 @@ function HomePage() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % words.length);
-    }, 2000); // Change every 2 seconds
+    }, 2000);
     return () => clearInterval(interval);
   }, [words.length]);
 
   const getPosition = (index: Number) => {
-    if (index === currentIndex) return "translate-y-0"; // Current text at center
+    if (index === currentIndex) return "translate-y-0";
     if (index === (currentIndex - 1 + words.length) % words.length)
-      return "-translate-y-[100px]"; // Previous text moves up
+      return "-translate-y-[100px]";
     if (index === (currentIndex + 1) % words.length)
-      return "translate-y-[300px]"; // Next text comes from bottom
-    return "translate-y-[300px] opacity-0"; // All other texts hidden below
+      return "translate-y-[300px]";
+    return "translate-y-[300px] opacity-0";
   };
 
   const styles = {
@@ -97,7 +97,7 @@ function HomePage() {
                       >
                         <h2
                           onClick={handleFirstSectionClick}
-                          className="font-bold md:text-6xl xl:text-8xl text-4xl uppercase tracking-wider  cursor-pointer"
+                          className="font-bold md:text-6xl xl:text-8xl text-4xl uppercase tracking-wider  cursor-pointer font-sf-pro-display-bold"
                         >
                           {" "}
                           {word}
@@ -114,7 +114,6 @@ function HomePage() {
                   alt="example"
                   width={500}
                   height={300}
-                  // className="absolute -top-40 right-0   "
                   className="absolute -top-10 right-0   "
                 />
               </div>
@@ -127,7 +126,6 @@ function HomePage() {
                   alt="example"
                   width={500}
                   height={300}
-                  // className="absolute -top-40 right-0   "
                   className="absolute -top-10 right-0   "
                 />
               </div>
@@ -136,17 +134,6 @@ function HomePage() {
         ) : (
           <>
             <section className="animate-expand transition-all duration-700 ease-in-out">
-              {/* <Card
-              id="bharat-bhasha"
-              title={"BharatBhashaNew"}
-              paragraph={
-                "Human-like conversational AI tailored for India's diverse languages, <br class='hidden md:block' /> transforming telephonic sales interactions. With support for over 10 <br class='hidden md:block' /> regional languages and seamless integration with existing systems, <br class='hidden md:block' /> it delivers real-time, natural conversations that boost engagement <br class='hidden md:block' /> and conversion rates. Scalable and customizable, Bharat Bhasha AI <br class='hidden md:block' /> is the ideal telephonic solution for businesses looking to connect <br class='hidden md:block' /> authentically with their customers while driving actionable insights <br class='hidden md:block' /> and enhancing sales efficiency."
-              }
-              image={"bharatImg"}
-              isLeft={true}
-              scheduleFunction={handleScroll}
-              buttonFunction={() => changeRoute("/bharat-bhasha")}
-            /> */}
               <HomeCard
                 id="bharat-bhasha"
                 title={"Bharat Bhasha.aI"}
@@ -157,9 +144,10 @@ function HomePage() {
                 scheduleFunction={handleScroll}
                 buttonFunction={() => changeRoute("/bharat-bhasha")}
                 bgimage={"Bharat Bhasha.AI element"}
+                animation={"fade-left"}
               />
               <HomeCard
-                id="bharat-bhasha"
+                id="razor-sharp"
                 title={"razor-sharp"}
                 paragraph={
                   "Turn your store's video and voice data into actionable <br class='hidden md:block' /> insights. Razor Sharp helps you uncover hidden <br class='hidden md:block' /> opportunities, optimise operations, and boost customer <br class='hidden md:block' /> satisfaction through Insights and Real-time Actionable <br class='hidden md:block' /> Notifications."
@@ -169,30 +157,8 @@ function HomePage() {
                 scheduleFunction={handleScroll}
                 buttonFunction={() => changeRoute("/bharat-bhasha")}
                 bgimage={"Razorsharp Element"}
+                animation={"fade-right"}
               />
-
-              {/* <Card
-              id="razor-sharp"
-              title={"RazorSharpNew"}
-              paragraph={
-                "Turn your store's video and voice data into actionable <br class='hidden md:block' /> insights. Razor Sharp helps you uncover hidden <br class='hidden md:block' /> opportunities, optimise operations, and boost customer <br class='hidden md:block' /> satisfaction through Insights and Real-time Actionable <br class='hidden md:block' /> Notifications."
-              }
-              image={"razorSharpImg"}
-              scheduleFunction={handleScroll}
-              buttonFunction={() => changeRoute("/razor-sharp")}
-            /> */}
-
-              {/* <Card
-              id="talking-brochure"
-              title={"TalkingBrochuresNew"}
-              paragraph={
-                "Revolutionize brand communication by turning traditional <br class='hidden md:block' /> marketing collaterals into interactive, Multilingual Industry <br class='hidden md:block' /> First AI-powered experiences. Designed for Indic <br class='hidden md:block' /> Languages and with seamless voice & visual engagement, <br class='hidden md:block' /> it goes beyond static PDFs, offering real-time updates and <br class='hidden md:block' /> boosting customer interaction across multiple channels."
-              }
-              image={"talkingImg"}
-              isLeft={true}
-              scheduleFunction={handleScroll}
-              buttonFunction={() => changeRoute("/talking-brochures")}
-            /> */}
 
               <Carousel
                 title={"Creative Studio"}

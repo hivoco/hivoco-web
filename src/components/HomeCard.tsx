@@ -13,6 +13,7 @@ interface props {
   buttonFunction?: () => void;
   issecondbutton?: Boolean;
   bgimage?: String;
+  animation: String;
 }
 
 function HomeCard({
@@ -27,6 +28,7 @@ function HomeCard({
   buttonFunction,
   issecondbutton = true,
   bgimage,
+  animation,
 }: props) {
   return (
     <div id={id} className={`container px-5 xl:px-20 py-20 relative `}>
@@ -35,11 +37,11 @@ function HomeCard({
           isLeft ? "xl:flex-row-reverse" : "xl:flex-row"
         }`}
       >
-        <h2 className="font-bold text-4xl uppercase z-40  cursor-pointer hover:text-transparent bg-clip-text bg-gradient-to-r from-red-700 to-blue-700 transition-colors duration-300 ease-in-out">
+        <h2 className="font-bold font-sf-pro-display-bold text-4xl uppercase z-40  cursor-pointer hover:text-transparent bg-clip-text bg-gradient-to-r from-red-700 to-blue-700 transition-colors duration-300 ease-in-out">
           {title}
         </h2>
 
-        <div className="relative">
+        <div data-aos={animation} className="relative">
           <Image
             src={`/bg/clipimg.png`}
             alt="example"
@@ -58,11 +60,10 @@ function HomeCard({
             />
 
             <p
-              className="text-[#2C2C2C] font-sf-pro-display-normal text-sm lg:text-base pt-4 pb-6 z-40"
+              className="text-[#2C2C2C] font-sf-pro-display-normal text-sm lg:text-base  pb-6 z-40 "
               dangerouslySetInnerHTML={{ __html: paragraph }}
             />
 
-            {/* Buttons */}
             <div className="flex items-center gap-7">
               <Button
                 onClick={buttonFunction}
@@ -81,13 +82,15 @@ function HomeCard({
           </div>
         </div>
       </div>
-      <Image
-        src={`/bg/${bgimage}.png`}
-        alt="example"
-        width={500}
-        height={300}
-        className={` absolute top-0 ${isLeft ? "right-0" : "left-0"}`}
-      />
+      {bgimage && (
+        <Image
+          src={`/bg/${bgimage}.png`}
+          alt="example"
+          width={500}
+          height={300}
+          className={` absolute top-0 ${isLeft ? "right-0" : "left-0"}`}
+        />
+      )}
     </div>
   );
 }
