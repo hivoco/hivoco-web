@@ -11,6 +11,7 @@ import { useRouter } from "next/router";
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import HomeCard from "@/components/HomeCard";
+import Button from "@/elements/Button";
 
 function HomePage() {
   const router = useRouter();
@@ -120,7 +121,22 @@ function HomePage() {
             </section>
             <section>
               <div className="relative  ">
-                <div className=" container py-52 px-5 xl:px-20 flex flex-col justify-center items-center gap-4 "></div>
+                <div className=" container px-5 xl:px-20 py-10 z-40 ">
+                  <div className="text-center flex flex-col gap-5 justify-center items-center">
+                    <p className="text-[#2C2C2C] font-sf-pro-display-normal text-sm lg:text-base  pb-6 z-40">
+                      HiVoco Studio’s patent-published tech helps you to
+                      meaningfully engage <br className="hidden md:block" />{" "}
+                      with your users, solve business problems & drive
+                      profitable growth.
+                    </p>
+                    <Button
+                      onClick={handleScroll}
+                      title={`Contact With Us`}
+                      className={`w-56`}
+                    />
+                  </div>
+                </div>
+
                 <Image
                   src={`/bg/Landing pg BG-2.png`}
                   alt="example"
@@ -132,49 +148,46 @@ function HomePage() {
             </section>
           </>
         ) : (
-          <>
-            <section className="animate-expand transition-all duration-700 ease-in-out">
-              <HomeCard
-                id="bharat-bhasha"
-                title={"Bharat Bhasha.aI"}
-                paragraph={
-                  "Turn your store's video and voice data into actionable <br class='hidden md:block' /> insights. Razor Sharp helps you uncover hidden <br class='hidden md:block' /> opportunities, optimise operations, and boost customer <br class='hidden md:block' /> satisfaction through Insights and Real-time Actionable <br class='hidden md:block' /> Notifications."
-                }
-                image={"BharatBhashaNew"}
-                scheduleFunction={handleScroll}
-                buttonFunction={() => changeRoute("/bharat-bhasha")}
-                bgimage={"Bharat Bhasha.AI element"}
-                animation={"fade-left"}
-              />
-              <HomeCard
-                id="razor-sharp"
-                title={"razor-sharp"}
-                paragraph={
-                  "Turn your store's video and voice data into actionable <br class='hidden md:block' /> insights. Razor Sharp helps you uncover hidden <br class='hidden md:block' /> opportunities, optimise operations, and boost customer <br class='hidden md:block' /> satisfaction through Insights and Real-time Actionable <br class='hidden md:block' /> Notifications."
-                }
-                isLeft={true}
-                image={"RazorSharpNew"}
-                scheduleFunction={handleScroll}
-                buttonFunction={() => changeRoute("/bharat-bhasha")}
-                bgimage={"Razorsharp Element"}
-                animation={"fade-right"}
-              />
+          <section className="animate-expand transition-all duration-700 ease-in-out">
+            <HomeCard
+              id="bharat-bhasha"
+              title={"Bharat Bhasha.aI"}
+              paragraph={
+                "Turn your store's video and voice data into actionable <br class='hidden md:block' /> insights. Razor Sharp helps you uncover hidden <br class='hidden md:block' /> opportunities, optimise operations, and boost customer <br class='hidden md:block' /> satisfaction through Insights and Real-time Actionable <br class='hidden md:block' /> Notifications."
+              }
+              image={"BharatBhashaNew"}
+              scheduleFunction={handleScroll}
+              buttonFunction={() => changeRoute("/bharat-bhasha")}
+              bgimage={"Bharat Bhasha.AI element"}
+              animation={"fade-left"}
+            />
+            <HomeCard
+              id="razor-sharp"
+              title={"razor-sharp"}
+              paragraph={
+                "Turn your store's video and voice data into actionable <br class='hidden md:block' /> insights. Razor Sharp helps you uncover hidden <br class='hidden md:block' /> opportunities, optimise operations, and boost customer <br class='hidden md:block' /> satisfaction through Insights and Real-time Actionable <br class='hidden md:block' /> Notifications."
+              }
+              isLeft={true}
+              image={"RazorSharpNew"}
+              scheduleFunction={handleScroll}
+              buttonFunction={() => changeRoute("/bharat-bhasha")}
+              bgimage={"Razorsharp Element"}
+              animation={"fade-right"}
+            />
 
-              <Carousel
-                title={"Creative Studio"}
-                paragraph={
-                  "Enhance Customer Engagement with AI-Driven Gamified <br class='hidden md:block' /> Experiences. Transform simple packaging into an innovative <br class='hidden md:block' /> marketing asset."
-                }
-                bgimage="Creative studio element"
-              />
-            </section>
-            <section>
-              <Awards />
-            </section>
-          </>
+            <Carousel
+              title={"Creative Studio"}
+              paragraph={
+                "Enhance Customer Engagement with AI-Driven Gamified <br class='hidden md:block' /> Experiences. Transform simple packaging into an innovative <br class='hidden md:block' /> marketing asset."
+              }
+              bgimage="Creative studio element"
+            />
+          </section>
         )}
       </>
-
+      <section>
+        <Awards />
+      </section>
       <section
         className=" w-full bg-cover"
         style={{

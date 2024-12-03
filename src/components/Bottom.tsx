@@ -60,7 +60,7 @@ function Bottom() {
               &nbsp;&nbsp;&nbsp;
               <small className="text-base  font-normal font-sf-pro-display-normal">
                 9400 W. Parmer Ln. Austin - 78717
-                <br /> Texas, US
+                <br className="hidden md:block" /> Texas, US
               </small>
             </div>
             <div className="flex ">
@@ -72,12 +72,23 @@ function Bottom() {
               />{" "}
               &nbsp;&nbsp;&nbsp;
               <small className="text-base font-normal font-sf-pro-display-normal">
-                18 Chuncha, 9th Main Rd, 2nd <br /> Block, Jaya Nagar,
-                Bengaluru, <br /> INDIA
+                18 Chuncha, 9th Main Rd, 2nd Block, Jaya Nagar,
+                <br className="hidden md:block" />
+                Bengaluru, INDIA
               </small>
             </div>
           </div>
-          <div className="flex justify-between gap-9 cursor-pointer flex-col md:flex-row">
+        </div>
+        <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-between items-center mt-8">
+          <div className="flex gap-5 text-white mt-8">
+            <small className=" cursor-pointer font-sf-pro-display-bold font-normal text-base">
+              © Hivoco Studios
+            </small>
+            <small className=" cursor-pointer font-sf-pro-display-bold font-normal text-base">
+              All Rights Reserved
+            </small>
+          </div>
+          <div className="flex justify-between gap-11 cursor-pointer flex-row">
             <Image
               onClick={() =>
                 handleRedirect("https://www.youtube.com/@hivocostudios")
@@ -109,16 +120,6 @@ function Bottom() {
               width={25}
               height={25}
             />
-          </div>
-        </div>
-        <div className="flex flex-col mt-5">
-          <div className="flex gap-5 text-white mt-8">
-            <small className=" cursor-pointer font-sf-pro-display-bold font-normal text-base">
-              © Hivoco Studios
-            </small>
-            <small className=" cursor-pointer font-sf-pro-display-bold font-normal text-base">
-              All Rights Reserved
-            </small>
           </div>
         </div>
       </div>
