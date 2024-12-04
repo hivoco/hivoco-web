@@ -13,15 +13,26 @@ function Bottom() {
   };
   return (
     <footer className="border-t-[0.5px] border-t-blue-200">
-      <div className="container   px-5 xl:px-20 pt-20 pb-14   ">
-        <div data-aos="fade-up" className="flex justify-between items-start  w-full text-white">
+      <div className="container   px-5 xl:px-20 pt-10 xl:pt-20 pb-14   ">
+        <Image
+          onClick={() => changeRoute("/")}
+          src={"svgs/footer-logo.svg"}
+          alt={`Slide`}
+          width={108}
+          height={114}
+          className="cursor-pointer w-20 h-20 xl:w-28 xl:h-28 xl:hidden block mx-auto mb-3 "
+        />
+        <div
+          data-aos="fade-up"
+          className="flex justify-between items-start gap-10 xl:gap-0  w-full text-white"
+        >
           <Image
             onClick={() => changeRoute("/")}
             src={"svgs/footer-logo.svg"}
             alt={`Slide`}
             width={108}
             height={114}
-            className="cursor-pointer w-20 h-20 xl:w-28 xl:h-28"
+            className="cursor-pointer w-20 h-20 xl:w-28 xl:h-28 hidden xl:block"
           />
           <div className="flex flex-col gap-3">
             <strong className="font-sf-pro-display-bold font-medium cursor-pointer text-lg">
