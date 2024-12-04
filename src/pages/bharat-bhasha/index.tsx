@@ -67,7 +67,7 @@ function index() {
           buttontext={"Schedule a demo"}
           buttonclass={"w-56"}
           issecondbutton={false}
-          animation={"fade-left"}
+          animation={"fade-up"}
         />
       </section>
 

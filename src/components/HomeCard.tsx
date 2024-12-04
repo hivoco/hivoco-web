@@ -31,17 +31,24 @@ function HomeCard({
   animation,
 }: props) {
   return (
-    <div id={id} className={`container px-5 xl:px-20 py-20 relative `}>
+    <div
+      data-aos={animation}
+      id={id}
+      className={`container px-5 xl:px-20 py-20 relative `}
+    >
       <div
         className={`flex justify-between items-center  w-full flex-col z-40 gap-10 xl:gap-0  ${
           isLeft ? "xl:flex-row-reverse" : "xl:flex-row"
         }`}
       >
-        <h2 data-aos="fade" className="font-bold font-sf-pro-display-bold text-4xl xl:text-5xl  uppercase z-40  cursor-pointer hover:text-transparent bg-clip-text bg-gradient-to-r from-red-700 to-blue-700 transition-colors duration-300 ease-in-out">
+        <h2
+          data-aos="fade"
+          className="font-bold font-sf-pro-display-bold text-4xl xl:text-5xl  uppercase z-40  cursor-pointer hover:text-transparent bg-clip-text bg-gradient-to-r from-red-700 to-blue-700 transition-colors duration-300 ease-in-out"
+        >
           {title}
         </h2>
 
-        <div data-aos={animation} className="relative">
+        <div className="relative z-40">
           <Image
             src={`/bg/clipimg.png`}
             alt="example"

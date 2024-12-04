@@ -55,7 +55,7 @@ function index() {
           buttonclass={"w-56"}
           issecondbutton={false}
           buttonFunction={handleScroll}
-          animation={"fade-left"}
+          animation={"fade-up"}
         />
       </section>
       <section>

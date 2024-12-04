@@ -133,7 +133,7 @@ function HomePage() {
               scheduleFunction={handleScroll}
               buttonFunction={() => changeRoute("/bharat-bhasha")}
               bgimage={"Bharat Bhasha.AI element"}
-              animation={"fade-left"}
+              animation={"fade-up"}
             />
             <HomeCard
               id="razor-sharp"
@@ -146,7 +146,7 @@ function HomePage() {
               scheduleFunction={handleScroll}
               buttonFunction={() => changeRoute("/bharat-bhasha")}
               bgimage={"Razorsharp Element"}
-              animation={"fade-right"}
+              animation={"fade-up"}
             />
 
             <Carousel
