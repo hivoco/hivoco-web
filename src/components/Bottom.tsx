@@ -20,7 +20,7 @@ function Bottom() {
           alt={`Slide`}
           width={108}
           height={114}
-          className="cursor-pointer w-20 h-20 xl:w-28 xl:h-28 xl:hidden block mx-auto mb-3 "
+          className="cursor-pointer w-32 h-32 xl:hidden block mx-auto mb-3 "
         />
         <div
           data-aos="fade-up"
