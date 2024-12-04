@@ -59,7 +59,7 @@ function index() {
           id="bharat-bhasha"
           title={"Bharat Bhasha.aI"}
           paragraph={
-            "Turn your store's video and voice data into actionable <br class='hidden xl:block' /> insights. Razor Sharp helps you uncover hidden <br class='hidden xl:block' /> opportunities, optimise operations, and boost customer <br class='hidden xl:block' /> satisfaction through Insights and Real-time Actionable <br class='hidden xl:block' /> Notifications."
+            "AI tailored for India’s languages enhances telephonic sales <br class='hidden xl:block' />  with real-time, natural conversations  in 10+ languages, <br class='hidden xl:block' /> seamlessly integrating into systems to boost  engagement <br class='hidden xl:block' /> and conversion rates."
           }
           image={"BharatBhashaNew"}
           // scheduleFunction={handleScroll}
