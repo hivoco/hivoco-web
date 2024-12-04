@@ -107,7 +107,7 @@ function HomePage() {
                 </div>
                 <p
                   data-aos="fade-up"
-                  className=" font-sf-pro-display-normal text-p-gray text-xl lg:text-lg font-light mt-5 "
+                  className=" font-sf-pro-display-normal text-p-gray text-xl lg:text-lg font-light mt-5 z-40 "
                 >
                   Click on keyword to view details
                 </p>
@@ -164,9 +164,9 @@ function HomePage() {
           <div className=" container px-5 xl:px-20 py-10 z-40 ">
             <div
               data-aos="fade-up"
-              className="text-center flex flex-col gap-5 justify-center items-center"
+              className="text-center flex flex-col gap-5 justify-center items-center z-40 relative"
             >
-              <p className="text-black font-sf-pro-display-normal text-sm lg:text-xl font-medium z-40">
+              <p className="text-black font-sf-pro-display-normal text-sm lg:text-xl font-medium ">
                 HiVoco Studio’s patent-published tech helps you to meaningfully
                 engage <br className="hidden md:block" /> with your users, solve
                 business problems & drive profitable growth.
@@ -174,7 +174,7 @@ function HomePage() {
               <Button
                 onClick={handleScroll}
                 title={`Contact With Us`}
-                className={`w-56`}
+                className={`w-56 relative`}
               />
             </div>
           </div>

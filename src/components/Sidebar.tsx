@@ -86,12 +86,12 @@ const Sidebar: React.FC<props> = ({ isOpen, setIsOpen }) => {
               >
                 Razor Sharp
               </Link>
-              <Link
+              {/* <Link
                 href="/talking-brochures"
                 className="block text-gray-800 font-sf-pro-display-normal font-medium text-base hover:text-blue-500"
               >
                 Talking Brochure
-              </Link>
+              </Link> */}
             </div>
           </div>
 
