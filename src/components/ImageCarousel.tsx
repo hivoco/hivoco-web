@@ -36,7 +36,7 @@ export default function ImageCarousel() {
   }, []);
 
   return (
-    <div className="relative w-full max-w-[398px]  overflow-hidden z-40 ">
+    <div className="relative w-full max-w-[398px] md:min-w-[600px] xl:max-w-[398px] overflow-hidden z-40 ">
       {/* Image Wrapper */}
       <div
         className="flex transition-transform duration-500 ease-in-out"
@@ -50,7 +50,7 @@ export default function ImageCarousel() {
               alt={`Slide ${index}`}
               width={398}
               height={398}
-              className="w-[398px] rounded-3xl"
+              className="w-[398px] md:w-full xl:w-[398px] rounded-3xl"
             />
           </div>
         ))}

@@ -33,7 +33,7 @@ function HomeCard({
   return (
     <div id={id} className={`container px-5 xl:px-20 py-20 relative `}>
       <div
-        className={`flex justify-between items-center  w-full flex-col z-40 gap-10 xl:gap-0 ${
+        className={`flex justify-between items-center  w-full flex-col z-40 gap-10 xl:gap-0  ${
           isLeft ? "xl:flex-row-reverse" : "xl:flex-row"
         }`}
       >
@@ -47,10 +47,10 @@ function HomeCard({
             alt="example"
             width={500}
             height={300}
-            className="object-cover h-[400px] md:h-auto w-auto rounded-lg "
+            className="object-cover h-[400px] md:h-auto md:w-[600px] w-auto xl:w-auto rounded-lg "
           />
 
-          <div className="absolute inset-0 flex flex-col items-center justify-center p-6 py-10   ">
+          <div className="absolute inset-0 flex flex-col items-center justify-center p-6 py-10 md:p-20 xl:p-6  ">
             <Image
               src={`/pngs/${image}.png`}
               alt="example"

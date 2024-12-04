@@ -347,7 +347,7 @@ function index() {
               </span>
             )}
           </div>
-          <div>
+          <div data-aos="fade-up">
             <Button
               onClick={() => submitDate()}
               title="SEND REQUEST"

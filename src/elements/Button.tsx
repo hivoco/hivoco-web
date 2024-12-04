@@ -6,6 +6,7 @@ interface ButtonProps {
   isIcon?: boolean;
   onClick?: () => void;
   isLoading?: boolean; // Use lowercase 'boolean' here
+  dataaos?:String
 }
 
 function Button({
@@ -14,6 +15,7 @@ function Button({
   isIcon = true,
   onClick,
   isLoading = false,
+  dataaos,
 }: ButtonProps) {
   const styles = {
     flex: "flex items-center",
@@ -24,10 +26,11 @@ function Button({
 
   return (
     <div
+      data-aos={dataaos}
       onClick={!isLoading ? onClick : undefined} // Disable onClick when loading
       className={`${styles.flexCenter} ${styles.flex} px-1 py-3 bg-[#F25F3E] h-min text-white gap-1 rounded-md shadow-button-shadow hover:cursor-pointer group ${className}`}
     >
-      <button className="text-sm lg:text-lg font-medium font-sf-pro-display-medium">
+      <button className="text-sm lg:text-lg font-medium font-sf-pro-display-medium ">
         {isLoading ? (
           <div className="loader animate-spin w-4 h-4 border-2 border-white border-t-transparent rounded-full"></div>
         ) : (

@@ -44,26 +44,26 @@ function index() {
     <Layout>
       <Header />
       <section>
-      
         <HomeCard
           id="razor-sharp"
           title={"razor-sharp"}
           paragraph={
-            "Turn your store's video and voice data into actionable <br class='hidden md:block' /> insights. Razor Sharp helps you uncover hidden <br class='hidden md:block' /> opportunities, optimise operations, and boost customer <br class='hidden md:block' /> satisfaction through Insights and Real-time Actionable <br class='hidden md:block' /> Notifications."
+            "Turn your store's video and voice data into actionable <br class='hidden xl:block' /> insights. Razor Sharp helps you uncover hidden <br class='hidden xl:block' /> opportunities, optimise operations, and boost customer <br class='hidden xl:block' /> satisfaction through Insights and Real-time Actionable <br class='hidden xl:block' /> Notifications."
           }
-          
           image={"RazorSharpNew"}
           buttontext="Schedule a demo"
           buttonclass={"w-56"}
           issecondbutton={false}
           buttonFunction={handleScroll}
-         
           animation={"fade-left"}
         />
       </section>
       <section>
         <div className="container px-5 xl:px-20 py-12">
-          <div className="flex flex-col xl:flex-row justify-between items-center">
+          <div
+            data-aos="fade-up"
+            className="flex flex-col xl:flex-row justify-between items-center"
+          >
             <small className="font-sf-pro-display-bold font-normal text-5xl leading-[60px]">
               Get ready for{" "}
               <strong>

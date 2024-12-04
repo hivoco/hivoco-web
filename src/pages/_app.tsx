@@ -12,6 +12,7 @@ export default function App({ Component, pageProps }: AppProps) {
       once: false, // Whether animation should happen only once
       easing: "ease-out", // Easing function for animations
     });
+    AOS.refresh();
   }, []);
   return <Component {...pageProps} />;
 }

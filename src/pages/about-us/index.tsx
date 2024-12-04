@@ -9,7 +9,7 @@ function index() {
     <Layout>
       <Header />
       <section>
-        <div className="container px-5 xl:px-20 pt-20 pb-12">
+        <div data-aos="fade-up" className="container px-5 xl:px-20 pt-20 pb-12">
           <h2 className="font-sf-pro-display-bold text-3xl xl:text-8xl font-bold">
             About Us
           </h2>
@@ -60,7 +60,10 @@ function index() {
             AI-powered capabilities that redefine engagement and elevate
             performance across industries.
           </p> */}
-          <div className="pt-12 flex flex-col justify-center items-center gap-14">
+          <div
+            data-aos="fade-up"
+            className="pt-12 flex flex-col justify-center items-center gap-14"
+          >
             <h2 className="font-sf-pro-display-bold text-2xl xl:text-6xl font-bold">
               Let's Talk
             </h2>

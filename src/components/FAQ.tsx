@@ -56,13 +56,16 @@ const FAQComponent: React.FC<props> = ({ image, faqs }) => {
 
   return (
     <div className="container px-5 xl:px-20 py-20  ">
-      <div className="text-center mb-16 ">
+      <div data-aos="fade-up" className="text-center mb-16 ">
         <small className="font-sf-pro-display-bold font-normal text-3xl xl:text-5xl leading-[60px]">
           Key
           <strong>&nbsp;Features</strong>
         </small>
       </div>
-      <div className="flex flex-between-center p-5 xl:p-12 bg-white rounded-3xl gap-24">
+      <div
+        data-aos="fade-up"
+        className="flex flex-between-center p-5 xl:p-12 bg-white rounded-3xl gap-24"
+      >
         <div className="xl:w-1/2 w-full">
           {faqs?.map((faq, index) => (
             <FAQItem

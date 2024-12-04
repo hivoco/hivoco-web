@@ -14,14 +14,14 @@ function Bottom() {
   return (
     <footer className="border-t-[0.5px] border-t-blue-200">
       <div className="container   px-5 xl:px-20 pt-20 pb-14   ">
-        <div className="flex justify-between items-start  w-full text-white">
+        <div data-aos="fade-up" className="flex justify-between items-start  w-full text-white">
           <Image
             onClick={() => changeRoute("/")}
             src={"svgs/footer-logo.svg"}
             alt={`Slide`}
-            width={95}
-            height={102}
-            className="cursor-pointer"
+            width={108}
+            height={114}
+            className="cursor-pointer w-20 h-20 xl:w-28 xl:h-28"
           />
           <div className="flex flex-col gap-3">
             <strong className="font-sf-pro-display-bold font-medium cursor-pointer text-lg">

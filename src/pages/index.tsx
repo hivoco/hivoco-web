@@ -105,7 +105,10 @@ function HomePage() {
                     </div>
                   ))}
                 </div>
-                <p className=" font-sf-pro-display-normal text-p-gray text-xl lg:text-lg font-light mt-5 ">
+                <p
+                  data-aos="fade-up"
+                  className=" font-sf-pro-display-normal text-p-gray text-xl lg:text-lg font-light mt-5 "
+                >
                   Click on keyword to view details
                 </p>
               </div>
@@ -124,7 +127,7 @@ function HomePage() {
               id="bharat-bhasha"
               title={"Bharat Bhasha.aI"}
               paragraph={
-                "Turn your store's video and voice data into actionable <br class='hidden md:block' /> insights. Razor Sharp helps you uncover hidden <br class='hidden md:block' /> opportunities, optimise operations, and boost customer <br class='hidden md:block' /> satisfaction through Insights and Real-time Actionable <br class='hidden md:block' /> Notifications."
+                "Turn your store's video and voice data into actionable <br class='hidden xl:block' /> insights. Razor Sharp helps you uncover hidden <br class='hidden xl:block' /> opportunities, optimise operations, and boost customer <br class='hidden xl:block' /> satisfaction through Insights and Real-time Actionable <br class='hidden xl:block' /> Notifications."
               }
               image={"BharatBhashaNew"}
               scheduleFunction={handleScroll}
@@ -136,7 +139,7 @@ function HomePage() {
               id="razor-sharp"
               title={"razor-sharp"}
               paragraph={
-                "Turn your store's video and voice data into actionable <br class='hidden md:block' /> insights. Razor Sharp helps you uncover hidden <br class='hidden md:block' /> opportunities, optimise operations, and boost customer <br class='hidden md:block' /> satisfaction through Insights and Real-time Actionable <br class='hidden md:block' /> Notifications."
+                "Turn your store's video and voice data into actionable <br class='hidden xl:block' /> insights. Razor Sharp helps you uncover hidden <br class='hidden xl:block' /> opportunities, optimise operations, and boost customer <br class='hidden xl:block' /> satisfaction through Insights and Real-time Actionable <br class='hidden xl:block' /> Notifications."
               }
               isLeft={true}
               image={"RazorSharpNew"}
@@ -149,7 +152,7 @@ function HomePage() {
             <Carousel
               title={"Creative Studio"}
               paragraph={
-                "Enhance Customer Engagement with AI-Driven Gamified <br class='hidden md:block' /> Experiences. Transform simple packaging into an innovative <br class='hidden md:block' /> marketing asset."
+                "Enhance Customer Engagement with AI-Driven Gamified <br class='hidden xl:block' /> Experiences. Transform simple packaging into an innovative <br class='hidden xl:block' /> marketing asset."
               }
               bgimage="Creative studio element"
             />
@@ -159,8 +162,11 @@ function HomePage() {
       <section>
         <div className="relative  ">
           <div className=" container px-5 xl:px-20 py-10 z-40 ">
-            <div className="text-center flex flex-col gap-5 justify-center items-center">
-              <p className="text-black font-sf-pro-display-normal text-sm lg:text-xl font-semibold z-40">
+            <div
+              data-aos="fade-up"
+              className="text-center flex flex-col gap-5 justify-center items-center"
+            >
+              <p className="text-black font-sf-pro-display-normal text-sm lg:text-xl font-medium z-40">
                 HiVoco Studio’s patent-published tech helps you to meaningfully
                 engage <br className="hidden md:block" /> with your users, solve
                 business problems & drive profitable growth.
@@ -182,7 +188,7 @@ function HomePage() {
           />
         </div>
       </section>
-      <section>
+      <section data-aos="fade-up">
         <Awards />
       </section>
       <section
