@@ -54,7 +54,7 @@ function HomeCard({
             alt="example"
             width={500}
             height={300}
-            className="object-cover h-[400px] md:h-auto md:w-[600px] w-auto xl:w-auto rounded-lg "
+            className="object-cover h-[400px] md:h-auto md:w-[600px]  rounded-lg "
           />
 
           <div className="absolute inset-0 flex flex-col items-center justify-center p-6 py-10 md:p-20 xl:p-6  ">
